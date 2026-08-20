@@ -1,0 +1,3 @@
+label,delta_panda,delta_chronos,delta_advantage,verdict
+Fixed sample-horizon (H=96 both res),0.026114670358187264,-0.09468431157457946,-0.12079898193276672,H-ii dominant (Chronos-side change >> Panda-side change)
+Fixed physical-horizon (16h both res),-0.2857389003014131,-0.39097138516551067,-0.10523248486409759,"MIXED -- both sides moved by comparable magnitude, neither H-i nor H-ii dominates cleanly"

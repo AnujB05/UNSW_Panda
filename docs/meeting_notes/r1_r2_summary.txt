@@ -1,0 +1,13 @@
+R1 determinism check:
+  identical=True  max_abs_diff=0.0000000000
+
+R2 n=8 vs n=20 comparison:
+           subset window_set  horizon  panda_mae  chronos_mae  advantage_mae  wilcoxon_p
+     homo_matched         n8       96   0.330867     0.702415       0.371548    0.007812
+hetero_controlled         n8       96   0.612616     0.856069       0.243454    0.007812
+     homo_matched        n20       96   0.553930     0.817299       0.263369    0.006040
+hetero_controlled        n20       96   0.560874     0.924654       0.363780    0.000131
+     homo_matched         n8      336   0.833083     1.178727       0.345644    0.003906
+hetero_controlled         n8      336   0.866903     1.057965       0.191062    0.027344
+     homo_matched        n20      336   0.922005     1.180557       0.258552    0.000161
+hetero_controlled        n20      336   0.708394     1.085175       0.376781    0.000002

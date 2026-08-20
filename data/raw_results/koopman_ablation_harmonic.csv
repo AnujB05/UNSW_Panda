@@ -1,0 +1,10 @@
+label,horizon,name_a,name_b,published_mae,published_iqr,advantage_mae,wilcoxon_p,dataset,model_tag,retrained_base_mae,retrained_base_iqr,koopman_ablation_mae,koopman_ablation_iqr
+Harmonic_published_H96,96,published,published,0.06879463419318199,0.033274371176958084,0.0,1.0,Harmonic,published,,,,
+Harmonic_retrained_base_H96,96,retrained_base,published,0.06879463419318199,0.033274371176958084,-0.27954791858792305,1.0,Harmonic,retrained_base,0.34834255278110504,0.13088487088680267,,
+Harmonic_koopman_ablation_H96,96,koopman_ablation,published,0.06879463419318199,0.033274371176958084,-0.13622545823454857,1.0,Harmonic,koopman_ablation,,,0.20502009242773056,0.166571993380785
+Harmonic_published_H192,192,published,published,0.11817049235105515,0.047502655535936356,0.0,1.0,Harmonic,published,,,,
+Harmonic_retrained_base_H192,192,retrained_base,published,0.11817049235105515,0.047502655535936356,-0.41101980954408646,1.0,Harmonic,retrained_base,0.5291903018951416,0.1584445834159851,,
+Harmonic_koopman_ablation_H192,192,koopman_ablation,published,0.11817049235105515,0.047502655535936356,-0.35857322067022324,1.0,Harmonic,koopman_ablation,,,0.4767437130212784,0.16447031497955322
+Harmonic_published_H336,336,published,published,0.30701589584350586,0.12549526616930962,0.0,1.0,Harmonic,published,,,,
+Harmonic_retrained_base_H336,336,retrained_base,published,0.30701589584350586,0.12549526616930962,-0.4115445017814636,1.0,Harmonic,retrained_base,0.7185603976249695,0.25179681181907654,,
+Harmonic_koopman_ablation_H336,336,koopman_ablation,published,0.30701589584350586,0.12549526616930962,-0.20462137460708618,0.999995231628418,Harmonic,koopman_ablation,,,0.511637270450592,0.3256889507174492

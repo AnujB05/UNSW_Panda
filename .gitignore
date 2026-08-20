@@ -1,0 +1,25 @@
+# Model weights and checkpoints -- see checkpoint_locations.txt for where they live
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*-checkpoint/
+*-checkpoints/
+panda-*k-*-checkpoint*/
+panda-*k-checkpoints*/
+
+# Large archives
+*.zip
+!docs/chat_transcripts/claude-project-panda.zip
+
+# Jupyter autosaves (37 such files in Downloads were deliberately not copied)
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+
+# OS cruft
+Thumbs.db
+.DS_Store

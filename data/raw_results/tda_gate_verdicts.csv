@@ -1,0 +1,7 @@
+gate,type,criterion,observed,pass
+A_sine,hard,top1/top2 >= 3 AND top1 >= 3*floor,"top1/top2=141.89, top1/floor=2.61, tau=5",False
+B_torus,soft,top2 >= 2*floor (two loops above noise floor),"top1/floor=1.14, top2/floor=0.94, tau=20",False
+C_lorenz,hard,"median(max_pers over x,y,z) >= 2*floor AND best channel >= 3*floor","median/floor=2.54, best/floor=2.59",False
+D_white_noise,hard,n_features >= 3 AND top1/top2 < 2 (no dominant loop),"n=407, top1/top2=1.01",True
+E_ar1,hard,(top1/top2 < 2) OR (top1 < 2*floor),"top1/top2=1.09, top1/floor=1.02",True
+F_seed_stability,hard,CV(max_pers over 3 subsample seeds) < 0.20,CV=0.000,True

@@ -1,0 +1,7 @@
+gate,type,criterion,observed,pass
+A_sine,hard,top1/top2 >= 3 AND top1 >= 3*own_floor,"top1/top2=135632190.49, top1/floor=6.72, tau=15",True
+B_torus,soft,top2 >= 2*own_floor (two loops above own null),"top1/floor=1.06, top2/floor=1.05, tau=19",False
+C_lorenz,hard,"median(top1/own_floor over x,y,z) >= 2 AND best >= 3","per-ch top1/floor=['1.34', '1.69', '1.47']",False
+D_white_noise,hard,n_features >= 3 AND top1/top2 < 2 AND top1/own_floor < 2,"n=385, top1/top2=1.25, top1/floor=0.85",True
+E_ar1,hard,(top1/top2 < 2) OR (top1 < 2*own_floor),"top1/top2=1.09, top1/floor=0.70",True
+F_seed_stability,hard,CV(max_pers over 3 subsample seeds) < 0.20,CV=0.000,True

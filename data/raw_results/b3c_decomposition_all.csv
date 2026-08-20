@@ -1,0 +1,3 @@
+label,delta_panda,delta_chronos,delta_advantage,verdict
+Fixed sample-horizon (H=96 both res),0.04263784059464015,-0.07902864303320001,-0.12166648362784016,"MIXED -- both sides moved by comparable magnitude, neither H-i nor H-ii dominates cleanly"
+Fixed physical-horizon (16h both res),-0.2692157300649602,-0.3753157166241312,-0.10609998655917102,"MIXED -- both sides moved by comparable magnitude, neither H-i nor H-ii dominates cleanly"

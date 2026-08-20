@@ -1,0 +1,5 @@
+dataset,n_channels,frac_structured,top1_over_floor_median,top1_over_floor_iqr,top1_over_top2_median,n_H1_median,tau_median
+Lorenz,3,0.333,2.66,0.78,1.44,456,16
+ETTh1,7,0.0,0.76,0.4,1.15,1014,12
+ETTh2,7,0.0,0.66,0.19,1.05,1132,15
+Weather,21,0.048,1.49,1.17,1.16,251,31

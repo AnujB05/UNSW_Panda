@@ -1,0 +1,4 @@
+# Archival repo: preserve bytes exactly as copied from Downloads.
+# Without this, git rewrites LF->CRLF in notebooks/CSVs on checkout, breaking
+# byte-fidelity with the originals (and .ipynb diffs/hashes).
+* -text

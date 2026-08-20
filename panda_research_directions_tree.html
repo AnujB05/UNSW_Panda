@@ -1,0 +1,101 @@
+<h2 class="sr-only">Panda research directions decision tree with three branches: mechanism understanding, improving generalisation, and evaluation standardisation</h2>
+<style>
+.rt{font-size:13px;color:var(--text-primary);padding:16px 0}
+.rt-root{text-align:center;margin-bottom:24px}
+.rt-root span{display:inline-block;padding:9px 24px;border:1.5px solid var(--border-strong);border-radius:8px;font-size:15px;font-weight:500}
+.rt-br{margin-bottom:10px}
+.rt-bl{display:flex;align-items:center;gap:8px;padding:7px 11px;border-radius:6px;font-weight:500;font-size:13px;margin-bottom:6px}
+.br-a .rt-bl{background:var(--bg-accent);color:var(--text-accent);border:1.5px solid var(--border-accent)}
+.br-b .rt-bl{background:var(--bg-success);color:var(--text-success);border:1.5px solid var(--border-success)}
+.br-c .rt-bl{background:var(--bg-warning);color:var(--text-warning);border:1.5px solid var(--border-warning)}
+.rt-ch{padding-left:18px;border-left:1.5px solid;margin-left:8px;padding-top:2px;padding-bottom:2px}
+.br-a .rt-ch{border-color:var(--border-accent)}
+.br-b .rt-ch{border-color:var(--border-success)}
+.br-c .rt-ch{border-color:var(--border-warning)}
+.rt-sub{padding-left:14px;border-left:1.5px dashed var(--border);margin-left:4px;margin-top:2px;margin-bottom:2px}
+.rt-sec{font-weight:500;font-size:11px;color:var(--text-muted);padding:5px 0 2px}
+.rt-it{display:flex;align-items:center;gap:5px;padding:3px 4px;font-size:12px;color:var(--text-primary);cursor:pointer;border-radius:4px;line-height:1.4}
+.rt-it:hover{background:var(--surface-1)}
+.rt-it::before{content:"›";color:var(--text-muted);font-size:12px;flex-shrink:0;width:8px}
+.bg{font-size:11px;padding:1px 5px;border-radius:3px;font-weight:500;flex-shrink:0}
+.bg-h{background:var(--bg-danger);color:var(--text-danger)}
+.bg-m{background:var(--bg-warning);color:var(--text-warning)}
+.bg-l{background:var(--surface-0);color:var(--text-muted);border:1px solid var(--border)}
+.tg{font-size:11px;padding:1px 5px;border-radius:3px;background:var(--surface-1);color:var(--text-secondary);border:1px solid var(--border);flex-shrink:0}
+.legend{display:flex;gap:10px;margin-top:16px;padding-top:12px;border-top:1px solid var(--border);font-size:11px;color:var(--text-muted);flex-wrap:wrap;align-items:center}
+</style>
+<div class="rt">
+<div class="rt-root"><span>Panda Research Directions</span></div>
+
+<div class="rt-br br-a">
+<div class="rt-bl">A · Mechanism Understanding</div>
+<div class="rt-ch">
+  <div class="rt-sec">A1 · Positive mechanism — what drives the advantage</div>
+  <div class="rt-it" onclick="sendPrompt('Tell me more about the Koopman lifting ablation experiment')"><span class="bg bg-h">High</span>Koopman lifting ablation<span class="tg">code access</span></div>
+  <div class="rt-it" onclick="sendPrompt('Tell me more about the temporal attention ablation for Panda')"><span class="bg bg-h">High</span>Temporal attention ablation<span class="tg">retraining</span></div>
+  <div class="rt-it" onclick="sendPrompt('What would feature space interpretability of the Koopman lifting look like?')"><span class="bg bg-m">Med</span>Feature space interpretability<span class="tg">now</span></div>
+  <div class="rt-sec" style="margin-top:6px">A2 · Generalisation boundary — why Weather yes, ETTh no</div>
+  <div class="rt-it" onclick="sendPrompt('Tell me more about persistent homology TDA for the generalisation boundary question')"><span class="bg bg-h">High</span>Persistent homology TDA<span class="tg">now</span></div>
+  <div class="rt-it" onclick="sendPrompt('What is the synthetic data interpolation experiment for the Panda generalisation boundary?')"><span class="bg bg-m">Med</span>Synthetic data interpolation between ODE attractors and Weather statistics</div>
+</div>
+</div>
+
+<div class="rt-br br-b">
+<div class="rt-bl">B · Improve Generalisation</div>
+<div class="rt-ch">
+  <div class="rt-sec">B1 · Chaotic systems (in-distribution)</div>
+  <div class="rt-it" onclick="sendPrompt('What does training diversity expansion mean for Panda?')"><span class="bg bg-m">Med</span>Training diversity expansion (more system types)</div>
+  <div class="rt-it" onclick="sendPrompt('What pretraining objective modifications are proposed for Panda instead of MSE and MLM?')"><span class="bg bg-l">Low</span>Pretraining objective modification<span class="tg">retraining</span></div>
+  <div class="rt-it" onclick="sendPrompt('How would SDE training data improve Panda generalisation?')"><span class="bg bg-l">Low</span>SDE training data<span class="tg">retraining</span></div>
+  <div class="rt-it" onclick="sendPrompt('How would mean regression mitigation work for Panda at long horizons?')"><span class="bg bg-l">Low</span>Mean regression mitigation (long-horizon collapse)</div>
+
+  <div class="rt-sec" style="margin-top:8px">B2 · Non-chaotic systems (out-of-distribution)</div>
+  <div class="rt-sub">
+    <div class="rt-sec">B2a · Non-chaotic ODEs</div>
+    <div class="rt-it" onclick="sendPrompt('What experiments would investigate the Harmonic oscillator and VanderPol anomalies in Panda?')"><span class="bg bg-m">Med</span>Harmonic / VanderPol mechanism investigation</div>
+    <div class="rt-it" onclick="sendPrompt('How would we extend the complexity continuum experiments for Panda?')"><span class="bg bg-m">Med</span>Complexity continuum extension (more systems, multiple seeds)</div>
+
+    <div class="rt-sec" style="margin-top:5px">B2b · PDEs</div>
+    <div class="rt-sub">
+      <div class="rt-sec">Chaotic PDEs</div>
+      <div class="rt-it" onclick="sendPrompt('Tell me about Lorenz-96 experiments and the inertial manifold hypothesis for Panda')"><span class="bg bg-m">Med</span>Lorenz-96 (inertial manifold hypothesis test)</div>
+      <div class="rt-it" onclick="sendPrompt('What would KS equation and Navier-Stokes experiments establish for Panda PDE generalisation?')"><span class="bg bg-m">Med</span>KS equation / Navier-Stokes</div>
+      <div class="rt-sec">Non-chaotic PDEs</div>
+      <div class="rt-it" onclick="sendPrompt('Tell me about the Burgers PCA artifact test — is the advantage genuine or a PCA artifact?')"><span class="bg bg-m">Med</span>Burgers artifact test (PCA vs raw spatial channels)</div>
+      <div class="rt-it" onclick="sendPrompt('What other non-chaotic PDEs should Panda be tested on?')"><span class="bg bg-m">Med</span>Diffusion equations / other smooth PDEs</div>
+    </div>
+
+    <div class="rt-sec" style="margin-top:5px">B2c · Real-world time series / sensors</div>
+    <div class="rt-sub">
+      <div class="rt-sec">Homogeneous sensors</div>
+      <div class="rt-it" onclick="sendPrompt('Explain the G-SWaN node embedding proposal for Panda on heterogeneous sensors')"><span class="bg bg-h">High</span>G-SWaN node embeddings (proper learned vector per sensor)<span class="tg">code access</span></div>
+      <div class="rt-sec">Heterogeneous sensors</div>
+      <div class="rt-it" onclick="sendPrompt('Tell me about the XXLTraffic evaluation direction for Panda')"><span class="bg bg-m">Med</span>XXLTraffic evaluation</div>
+      <div class="rt-it" onclick="sendPrompt('What is the graph topology attention direction for Panda?')"><span class="bg bg-m">Med</span>Graph topology attention (encode known sensor adjacency)</div>
+      <div class="rt-sec">Specific failing datasets (ETTh)</div>
+      <div class="rt-it" onclick="sendPrompt('What adapter or LoRA approaches are proposed for improving ETTh generalisation in Panda?')"><span class="bg bg-m">Med</span>Adapter / LoRA fine-tuning</div>
+      <div class="rt-it" onclick="sendPrompt('Explain the Panda-Chronos hybrid adapter concept in detail')"><span class="bg bg-m">Med</span>Panda-Chronos hybrid (Koopman lifting + Chronos encoder)</div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="rt-br br-c">
+<div class="rt-bl">C · Evaluation Standardisation</div>
+<div class="rt-ch">
+  <div class="rt-it" onclick="sendPrompt('Why are CRPS and Hellinger distance better metrics than MAE for chaotic systems?')"><span class="bg bg-h">High</span>CRPS / Hellinger distance for chaotic system experiments<span class="tg">now</span></div>
+  <div class="rt-it" onclick="sendPrompt('What is the long-horizon distributional evaluation direction for Panda?')"><span class="bg bg-m">Med</span>Long-horizon distributional evaluation (beyond Lyapunov time)<span class="tg">now</span></div>
+  <div class="rt-it" onclick="sendPrompt('What is the cross-regime metric standardisation problem for comparing chaotic and non-chaotic evaluation?')"><span class="bg bg-m">Med</span>Cross-regime metric standardisation (DeepLévy connection)</div>
+</div>
+</div>
+
+<div class="legend">
+  <span><span class="bg bg-h" style="display:inline-block">High</span> high priority</span>
+  <span><span class="bg bg-m" style="display:inline-block">Med</span> medium priority</span>
+  <span><span class="bg bg-l" style="display:inline-block">Low</span> low priority</span>
+  <span style="margin-left:6px"><span class="tg" style="display:inline-block">now</span> feasible immediately</span>
+  <span><span class="tg" style="display:inline-block">code access</span> requires model source code</span>
+  <span><span class="tg" style="display:inline-block">retraining</span> requires GPU + training run</span>
+  <span style="color:var(--text-muted);font-style:italic">· click any item to discuss it</span>
+</div>
+</div>

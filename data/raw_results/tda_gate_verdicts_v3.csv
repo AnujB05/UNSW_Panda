@@ -1,0 +1,9 @@
+gate,type,criterion,observed,pass
+A_sine,hard,top1/top2 >= 3 AND top1 >= 3*own_floor,"top1/top2=3761412918567.66, top1/floor=6.89, tau=22",True
+B_torus_top1,hard,top1 >= 3*own_floor (dominant loop of multi-frequency signal),"top1/floor=3.76, tau=19",True
+B_torus_top2,soft,top2 >= 2*own_floor (second loop resolved),top2/floor=2.73,True
+C_lorenz,hard,"median(top1/own_floor over x,y,z) >= 2 AND best >= 3","per-ch top1/floor=['3.07', '2.66', '1.50']",True
+D_white_noise,hard,n_features >= 3 AND top1/top2 < 2 AND top1/own_floor < 2,"n=1407, top1/top2=1.06, top1/floor=0.84",True
+E_ar1,hard,(top1/top2 < 2) OR (top1 < 2*own_floor),"top1/top2=1.07, top1/floor=1.04",True
+F_seed_stability,hard,"CV(max_pers, lorenz_x, 3 seeds) < 0.20 AND CV > 0 (non-degenerate)",CV=0.0513,True
+G_statespace (diagnostic),diagnostic,true-state Lorenz top1 >= 3*own_floor,top1/floor=1.68,False

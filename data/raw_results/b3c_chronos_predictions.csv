@@ -1,0 +1,1261 @@
+model,condition,window_idx,channel,mae,degenerate
+chronos,native_H96,0,p (mbar),0.14496971666812897,False
+chronos,native_H96,0,T (degC),2.3391900062561035,False
+chronos,native_H96,0,Tpot (K),0.549569308757782,False
+chronos,native_H96,0,Tdew (degC),0.8994455337524414,False
+chronos,native_H96,0,rh (%),1.012897253036499,False
+chronos,native_H96,0,VPmax (mbar),0.44094908237457275,False
+chronos,native_H96,0,VPact (mbar),2.0071775913238525,False
+chronos,native_H96,0,VPdef (mbar),0.43455013632774353,False
+chronos,native_H96,0,sh (g/kg),1.455156683921814,False
+chronos,native_H96,0,H2OC (mmol/mol),0.9107887744903564,False
+chronos,native_H96,0,rho (g/m**3),1.0645216703414917,False
+chronos,native_H96,0,wv (m/s),0.5487564206123352,False
+chronos,native_H96,0,max. wv (m/s),0.6782729029655457,False
+chronos,native_H96,0,wd (deg),1.3256866931915283,False
+chronos,native_H96,0,rain (mm),0.0030002191197127104,False
+chronos,native_H96,0,raining (s),0.005781486164778471,False
+chronos,native_H96,0,SWDR (W/m�),0.8293460011482239,False
+chronos,native_H96,0,PAR (�mol/m�/s),1.2484169006347656,False
+chronos,native_H96,0,max. PAR (�mol/m�/s),0.6858060956001282,False
+chronos,native_H96,0,Tlog (degC),1.0050164461135864,False
+chronos,native_H96,0,OT,0.6501639485359192,False
+chronos,native_H96,1,p (mbar),2.492488145828247,False
+chronos,native_H96,1,T (degC),2.975327491760254,False
+chronos,native_H96,1,Tpot (K),2.7479565143585205,False
+chronos,native_H96,1,Tdew (degC),1.9969171285629272,False
+chronos,native_H96,1,rh (%),1.6445178985595703,False
+chronos,native_H96,1,VPmax (mbar),3.530599594116211,False
+chronos,native_H96,1,VPact (mbar),2.2338297367095947,False
+chronos,native_H96,1,VPdef (mbar),2.343655824661255,False
+chronos,native_H96,1,sh (g/kg),2.5588414669036865,False
+chronos,native_H96,1,H2OC (mmol/mol),2.3179986476898193,False
+chronos,native_H96,1,rho (g/m**3),3.4813320636749268,False
+chronos,native_H96,1,wv (m/s),6.310684680938721,False
+chronos,native_H96,1,max. wv (m/s),6.97619104385376,False
+chronos,native_H96,1,wd (deg),0.2553558051586151,False
+chronos,native_H96,1,rain (mm),1.0952296257019043,True
+chronos,native_H96,1,raining (s),0.00042709591798484325,False
+chronos,native_H96,1,SWDR (W/m�),2.8213281631469727,False
+chronos,native_H96,1,PAR (�mol/m�/s),1.3811450004577637,False
+chronos,native_H96,1,max. PAR (�mol/m�/s),1.9392324686050415,False
+chronos,native_H96,1,Tlog (degC),1.8259811401367188,False
+chronos,native_H96,1,OT,1.2161685228347778,False
+chronos,native_H96,2,p (mbar),0.4355117380619049,False
+chronos,native_H96,2,T (degC),0.5856926441192627,False
+chronos,native_H96,2,Tpot (K),0.425727516412735,False
+chronos,native_H96,2,Tdew (degC),0.1287151575088501,False
+chronos,native_H96,2,rh (%),1.1999074220657349,False
+chronos,native_H96,2,VPmax (mbar),0.32976046204566956,False
+chronos,native_H96,2,VPact (mbar),0.16285526752471924,False
+chronos,native_H96,2,VPdef (mbar),0.6896098256111145,False
+chronos,native_H96,2,sh (g/kg),1.418965458869934,False
+chronos,native_H96,2,H2OC (mmol/mol),0.3758556842803955,False
+chronos,native_H96,2,rho (g/m**3),0.6630759239196777,False
+chronos,native_H96,2,wv (m/s),1.0511130094528198,False
+chronos,native_H96,2,max. wv (m/s),0.7801399230957031,False
+chronos,native_H96,2,wd (deg),2.3563976287841797,False
+chronos,native_H96,2,rain (mm),0.10239913314580917,False
+chronos,native_H96,2,raining (s),0.935072124004364,False
+chronos,native_H96,2,SWDR (W/m�),1.2416876554489136,False
+chronos,native_H96,2,PAR (�mol/m�/s),1.1165498495101929,False
+chronos,native_H96,2,max. PAR (�mol/m�/s),0.9703530669212341,False
+chronos,native_H96,2,Tlog (degC),0.42859914898872375,False
+chronos,native_H96,2,OT,1.2995878458023071,False
+chronos,native_H96,3,p (mbar),0.30641695857048035,False
+chronos,native_H96,3,T (degC),2.67077374458313,False
+chronos,native_H96,3,Tpot (K),2.390594005584717,False
+chronos,native_H96,3,Tdew (degC),2.2947075366973877,False
+chronos,native_H96,3,rh (%),0.8695808053016663,False
+chronos,native_H96,3,VPmax (mbar),2.4242136478424072,False
+chronos,native_H96,3,VPact (mbar),2.0958385467529297,False
+chronos,native_H96,3,VPdef (mbar),1.2180438041687012,False
+chronos,native_H96,3,sh (g/kg),1.9033451080322266,False
+chronos,native_H96,3,H2OC (mmol/mol),2.119856834411621,False
+chronos,native_H96,3,rho (g/m**3),1.380001425743103,False
+chronos,native_H96,3,wv (m/s),0.4213142395019531,False
+chronos,native_H96,3,max. wv (m/s),0.468759149312973,False
+chronos,native_H96,3,wd (deg),1.0786625146865845,False
+chronos,native_H96,3,rain (mm),0.0004736290720757097,False
+chronos,native_H96,3,raining (s),2.1163744926452637,False
+chronos,native_H96,3,SWDR (W/m�),1.1712678670883179,False
+chronos,native_H96,3,PAR (�mol/m�/s),1.2000125646591187,False
+chronos,native_H96,3,max. PAR (�mol/m�/s),1.0181950330734253,False
+chronos,native_H96,3,Tlog (degC),1.4221071004867554,False
+chronos,native_H96,3,OT,2.3742525577545166,False
+chronos,native_H96,4,p (mbar),0.42658719420433044,False
+chronos,native_H96,4,T (degC),0.662743866443634,False
+chronos,native_H96,4,Tpot (K),1.3650132417678833,False
+chronos,native_H96,4,Tdew (degC),2.0470080375671387,False
+chronos,native_H96,4,rh (%),0.5707609057426453,False
+chronos,native_H96,4,VPmax (mbar),0.657010018825531,False
+chronos,native_H96,4,VPact (mbar),1.7648166418075562,False
+chronos,native_H96,4,VPdef (mbar),0.5336715579032898,False
+chronos,native_H96,4,sh (g/kg),1.170688271522522,False
+chronos,native_H96,4,H2OC (mmol/mol),2.3758959770202637,False
+chronos,native_H96,4,rho (g/m**3),0.6087732911109924,False
+chronos,native_H96,4,wv (m/s),0.5518022179603577,False
+chronos,native_H96,4,max. wv (m/s),0.5699290633201599,False
+chronos,native_H96,4,wd (deg),0.644317626953125,False
+chronos,native_H96,4,rain (mm),0.0020833334419876337,True
+chronos,native_H96,4,raining (s),0.19872765243053436,False
+chronos,native_H96,4,SWDR (W/m�),0.2762092053890228,False
+chronos,native_H96,4,PAR (�mol/m�/s),0.32207128405570984,False
+chronos,native_H96,4,max. PAR (�mol/m�/s),0.7749218940734863,False
+chronos,native_H96,4,Tlog (degC),0.8702001571655273,False
+chronos,native_H96,4,OT,0.41369929909706116,False
+chronos,native_H96,5,p (mbar),1.0678454637527466,False
+chronos,native_H96,5,T (degC),0.20936180651187897,False
+chronos,native_H96,5,Tpot (K),0.13463667035102844,False
+chronos,native_H96,5,Tdew (degC),0.6637285351753235,False
+chronos,native_H96,5,rh (%),0.47486376762390137,False
+chronos,native_H96,5,VPmax (mbar),0.5154923796653748,False
+chronos,native_H96,5,VPact (mbar),0.3749459981918335,False
+chronos,native_H96,5,VPdef (mbar),0.2316301316022873,False
+chronos,native_H96,5,sh (g/kg),0.15449221432209015,False
+chronos,native_H96,5,H2OC (mmol/mol),0.7233662009239197,False
+chronos,native_H96,5,rho (g/m**3),0.3219374418258667,False
+chronos,native_H96,5,wv (m/s),0.5032939910888672,False
+chronos,native_H96,5,max. wv (m/s),0.8117724061012268,False
+chronos,native_H96,5,wd (deg),0.2997031509876251,False
+chronos,native_H96,5,rain (mm),0.18832802772521973,False
+chronos,native_H96,5,raining (s),0.0016456873854622245,False
+chronos,native_H96,5,SWDR (W/m�),1.1211975812911987,False
+chronos,native_H96,5,PAR (�mol/m�/s),1.1053919792175293,False
+chronos,native_H96,5,max. PAR (�mol/m�/s),1.0786473751068115,False
+chronos,native_H96,5,Tlog (degC),1.0260496139526367,False
+chronos,native_H96,5,OT,0.43191778659820557,False
+chronos,native_H96,6,p (mbar),1.1432965993881226,False
+chronos,native_H96,6,T (degC),0.3678494989871979,False
+chronos,native_H96,6,Tpot (K),0.7330904006958008,False
+chronos,native_H96,6,Tdew (degC),0.6917697787284851,False
+chronos,native_H96,6,rh (%),0.6565859317779541,False
+chronos,native_H96,6,VPmax (mbar),0.8019165396690369,False
+chronos,native_H96,6,VPact (mbar),0.5883958339691162,False
+chronos,native_H96,6,VPdef (mbar),1.0208317041397095,False
+chronos,native_H96,6,sh (g/kg),0.6035863757133484,False
+chronos,native_H96,6,H2OC (mmol/mol),0.6114559173583984,False
+chronos,native_H96,6,rho (g/m**3),1.1474266052246094,False
+chronos,native_H96,6,wv (m/s),0.8216388821601868,False
+chronos,native_H96,6,max. wv (m/s),0.7363293766975403,False
+chronos,native_H96,6,wd (deg),0.591646134853363,False
+chronos,native_H96,6,rain (mm),0.0,True
+chronos,native_H96,6,raining (s),0.0,True
+chronos,native_H96,6,SWDR (W/m�),0.7016499042510986,False
+chronos,native_H96,6,PAR (�mol/m�/s),0.7135682106018066,False
+chronos,native_H96,6,max. PAR (�mol/m�/s),0.7227559089660645,False
+chronos,native_H96,6,Tlog (degC),0.7855057716369629,False
+chronos,native_H96,6,OT,1.1395052671432495,False
+chronos,native_H96,7,p (mbar),0.21329565346240997,False
+chronos,native_H96,7,T (degC),1.2297464609146118,False
+chronos,native_H96,7,Tpot (K),0.8165904879570007,False
+chronos,native_H96,7,Tdew (degC),1.157429814338684,False
+chronos,native_H96,7,rh (%),1.2558941841125488,False
+chronos,native_H96,7,VPmax (mbar),1.4819577932357788,False
+chronos,native_H96,7,VPact (mbar),0.3994617760181427,False
+chronos,native_H96,7,VPdef (mbar),1.3052743673324585,False
+chronos,native_H96,7,sh (g/kg),0.3254222571849823,False
+chronos,native_H96,7,H2OC (mmol/mol),0.3813460171222687,False
+chronos,native_H96,7,rho (g/m**3),0.4925771951675415,False
+chronos,native_H96,7,wv (m/s),0.4252784252166748,False
+chronos,native_H96,7,max. wv (m/s),0.30623430013656616,False
+chronos,native_H96,7,wd (deg),1.003885269165039,False
+chronos,native_H96,7,rain (mm),0.0024816894438117743,False
+chronos,native_H96,7,raining (s),0.16397547721862793,False
+chronos,native_H96,7,SWDR (W/m�),0.7815861701965332,False
+chronos,native_H96,7,PAR (�mol/m�/s),0.884300947189331,False
+chronos,native_H96,7,max. PAR (�mol/m�/s),0.5637386441230774,False
+chronos,native_H96,7,Tlog (degC),1.56216299533844,False
+chronos,native_H96,7,OT,2.581566572189331,False
+chronos,native_H96,8,p (mbar),0.5898662805557251,False
+chronos,native_H96,8,T (degC),0.5538623929023743,False
+chronos,native_H96,8,Tpot (K),0.3415888547897339,False
+chronos,native_H96,8,Tdew (degC),1.9909276962280273,False
+chronos,native_H96,8,rh (%),1.7788976430892944,False
+chronos,native_H96,8,VPmax (mbar),0.4511425197124481,False
+chronos,native_H96,8,VPact (mbar),1.522485613822937,False
+chronos,native_H96,8,VPdef (mbar),0.7465299963951111,False
+chronos,native_H96,8,sh (g/kg),2.0657918453216553,False
+chronos,native_H96,8,H2OC (mmol/mol),2.411547899246216,False
+chronos,native_H96,8,rho (g/m**3),0.2949751615524292,False
+chronos,native_H96,8,wv (m/s),0.932471752166748,False
+chronos,native_H96,8,max. wv (m/s),1.1867423057556152,False
+chronos,native_H96,8,wd (deg),0.9019396901130676,False
+chronos,native_H96,8,rain (mm),4.484518051147461,False
+chronos,native_H96,8,raining (s),1.3398593664169312,False
+chronos,native_H96,8,SWDR (W/m�),0.09391013532876968,False
+chronos,native_H96,8,PAR (�mol/m�/s),0.8221715092658997,False
+chronos,native_H96,8,max. PAR (�mol/m�/s),0.1372768133878708,False
+chronos,native_H96,8,Tlog (degC),0.6896701455116272,False
+chronos,native_H96,8,OT,0.3108626902103424,False
+chronos,native_H96,9,p (mbar),0.29133522510528564,False
+chronos,native_H96,9,T (degC),0.5295239090919495,False
+chronos,native_H96,9,Tpot (K),0.5789032578468323,False
+chronos,native_H96,9,Tdew (degC),1.031599760055542,False
+chronos,native_H96,9,rh (%),0.8597909808158875,False
+chronos,native_H96,9,VPmax (mbar),0.37356194853782654,False
+chronos,native_H96,9,VPact (mbar),0.3257633447647095,False
+chronos,native_H96,9,VPdef (mbar),1.054355502128601,False
+chronos,native_H96,9,sh (g/kg),0.7665252089500427,False
+chronos,native_H96,9,H2OC (mmol/mol),0.3490598201751709,False
+chronos,native_H96,9,rho (g/m**3),0.22086016833782196,False
+chronos,native_H96,9,wv (m/s),0.6659556031227112,False
+chronos,native_H96,9,max. wv (m/s),0.6351543068885803,False
+chronos,native_H96,9,wd (deg),1.1048818826675415,False
+chronos,native_H96,9,rain (mm),0.0,True
+chronos,native_H96,9,raining (s),0.15373489260673523,False
+chronos,native_H96,9,SWDR (W/m�),0.6125847697257996,False
+chronos,native_H96,9,PAR (�mol/m�/s),0.5942188501358032,False
+chronos,native_H96,9,max. PAR (�mol/m�/s),0.1532810777425766,False
+chronos,native_H96,9,Tlog (degC),0.7790974974632263,False
+chronos,native_H96,9,OT,0.7557649612426758,False
+chronos,native_H96,10,p (mbar),1.2915970087051392,False
+chronos,native_H96,10,T (degC),0.6046193242073059,False
+chronos,native_H96,10,Tpot (K),0.8697689175605774,False
+chronos,native_H96,10,Tdew (degC),0.5982881188392639,False
+chronos,native_H96,10,rh (%),0.3191124498844147,False
+chronos,native_H96,10,VPmax (mbar),0.38452792167663574,False
+chronos,native_H96,10,VPact (mbar),1.2822977304458618,False
+chronos,native_H96,10,VPdef (mbar),0.7278769612312317,False
+chronos,native_H96,10,sh (g/kg),0.6526126265525818,False
+chronos,native_H96,10,H2OC (mmol/mol),0.5086567997932434,False
+chronos,native_H96,10,rho (g/m**3),0.8142048716545105,False
+chronos,native_H96,10,wv (m/s),0.48854732513427734,False
+chronos,native_H96,10,max. wv (m/s),0.3466266095638275,False
+chronos,native_H96,10,wd (deg),0.9068440794944763,False
+chronos,native_H96,10,rain (mm),0.0,True
+chronos,native_H96,10,raining (s),0.0007686534081585705,False
+chronos,native_H96,10,SWDR (W/m�),0.20106768608093262,False
+chronos,native_H96,10,PAR (�mol/m�/s),0.7990267872810364,False
+chronos,native_H96,10,max. PAR (�mol/m�/s),0.12359485775232315,False
+chronos,native_H96,10,Tlog (degC),0.5662760138511658,False
+chronos,native_H96,10,OT,0.7001371383666992,False
+chronos,native_H96,11,p (mbar),0.11480316519737244,False
+chronos,native_H96,11,T (degC),0.4377807378768921,False
+chronos,native_H96,11,Tpot (K),0.9514893889427185,False
+chronos,native_H96,11,Tdew (degC),0.5066179633140564,False
+chronos,native_H96,11,rh (%),0.6546532511711121,False
+chronos,native_H96,11,VPmax (mbar),0.6451901197433472,False
+chronos,native_H96,11,VPact (mbar),0.22716903686523438,False
+chronos,native_H96,11,VPdef (mbar),0.5008273720741272,False
+chronos,native_H96,11,sh (g/kg),0.33957144618034363,False
+chronos,native_H96,11,H2OC (mmol/mol),0.3325575590133667,False
+chronos,native_H96,11,rho (g/m**3),1.541425108909607,False
+chronos,native_H96,11,wv (m/s),1.0608464479446411,False
+chronos,native_H96,11,max. wv (m/s),0.9082019925117493,False
+chronos,native_H96,11,wd (deg),1.2143803834915161,False
+chronos,native_H96,11,rain (mm),0.0,True
+chronos,native_H96,11,raining (s),0.00017082442354876548,False
+chronos,native_H96,11,SWDR (W/m�),1.6566909551620483,False
+chronos,native_H96,11,PAR (�mol/m�/s),1.2536813020706177,False
+chronos,native_H96,11,max. PAR (�mol/m�/s),0.79637211561203,False
+chronos,native_H96,11,Tlog (degC),1.3318039178848267,False
+chronos,native_H96,11,OT,0.9622856974601746,False
+chronos,native_H96,12,p (mbar),0.5753028392791748,False
+chronos,native_H96,12,T (degC),0.7767112851142883,False
+chronos,native_H96,12,Tpot (K),0.21792440116405487,False
+chronos,native_H96,12,Tdew (degC),0.5374755859375,False
+chronos,native_H96,12,rh (%),0.7368154525756836,False
+chronos,native_H96,12,VPmax (mbar),1.0740251541137695,False
+chronos,native_H96,12,VPact (mbar),0.770195484161377,False
+chronos,native_H96,12,VPdef (mbar),0.2661888301372528,False
+chronos,native_H96,12,sh (g/kg),0.7261902689933777,False
+chronos,native_H96,12,H2OC (mmol/mol),1.2068073749542236,False
+chronos,native_H96,12,rho (g/m**3),0.8459571003913879,False
+chronos,native_H96,12,wv (m/s),1.0738403797149658,False
+chronos,native_H96,12,max. wv (m/s),1.1847895383834839,False
+chronos,native_H96,12,wd (deg),0.6683406829833984,False
+chronos,native_H96,12,rain (mm),0.0009370191837660968,False
+chronos,native_H96,12,raining (s),0.4856971800327301,False
+chronos,native_H96,12,SWDR (W/m�),0.7833049893379211,False
+chronos,native_H96,12,PAR (�mol/m�/s),0.5784611105918884,False
+chronos,native_H96,12,max. PAR (�mol/m�/s),1.8689368963241577,False
+chronos,native_H96,12,Tlog (degC),0.6703543066978455,False
+chronos,native_H96,12,OT,0.49687108397483826,False
+chronos,native_H96,13,p (mbar),0.6571099758148193,False
+chronos,native_H96,13,T (degC),0.6640080809593201,False
+chronos,native_H96,13,Tpot (K),0.3367691934108734,False
+chronos,native_H96,13,Tdew (degC),0.6138246655464172,False
+chronos,native_H96,13,rh (%),0.4806176722049713,False
+chronos,native_H96,13,VPmax (mbar),0.3691519796848297,False
+chronos,native_H96,13,VPact (mbar),0.7679052948951721,False
+chronos,native_H96,13,VPdef (mbar),0.7107154726982117,False
+chronos,native_H96,13,sh (g/kg),0.5678861141204834,False
+chronos,native_H96,13,H2OC (mmol/mol),0.484281063079834,False
+chronos,native_H96,13,rho (g/m**3),0.21536453068256378,False
+chronos,native_H96,13,wv (m/s),0.45187845826148987,False
+chronos,native_H96,13,max. wv (m/s),0.4320344924926758,False
+chronos,native_H96,13,wd (deg),1.3354359865188599,False
+chronos,native_H96,13,rain (mm),0.002475939691066742,False
+chronos,native_H96,13,raining (s),0.0010611414909362793,False
+chronos,native_H96,13,SWDR (W/m�),0.09305844455957413,False
+chronos,native_H96,13,PAR (�mol/m�/s),0.0805707648396492,False
+chronos,native_H96,13,max. PAR (�mol/m�/s),0.07921891659498215,False
+chronos,native_H96,13,Tlog (degC),0.5472621321678162,False
+chronos,native_H96,13,OT,0.5068466067314148,False
+chronos,native_H96,14,p (mbar),0.1848779171705246,False
+chronos,native_H96,14,T (degC),2.405601739883423,False
+chronos,native_H96,14,Tpot (K),0.9005959033966064,False
+chronos,native_H96,14,Tdew (degC),0.4734184741973877,False
+chronos,native_H96,14,rh (%),1.4118047952651978,False
+chronos,native_H96,14,VPmax (mbar),1.7131961584091187,False
+chronos,native_H96,14,VPact (mbar),1.0720633268356323,False
+chronos,native_H96,14,VPdef (mbar),2.053830862045288,False
+chronos,native_H96,14,sh (g/kg),1.073447585105896,False
+chronos,native_H96,14,H2OC (mmol/mol),0.42523205280303955,False
+chronos,native_H96,14,rho (g/m**3),1.6447362899780273,False
+chronos,native_H96,14,wv (m/s),0.6699612140655518,False
+chronos,native_H96,14,max. wv (m/s),0.6123324036598206,False
+chronos,native_H96,14,wd (deg),0.9811967015266418,False
+chronos,native_H96,14,rain (mm),0.0033344326075166464,False
+chronos,native_H96,14,raining (s),0.003024917095899582,False
+chronos,native_H96,14,SWDR (W/m�),0.4576467275619507,False
+chronos,native_H96,14,PAR (�mol/m�/s),0.7393352389335632,False
+chronos,native_H96,14,max. PAR (�mol/m�/s),1.7315179109573364,False
+chronos,native_H96,14,Tlog (degC),0.6354396939277649,False
+chronos,native_H96,14,OT,0.963973343372345,False
+chronos,native_H96,15,p (mbar),0.23669713735580444,False
+chronos,native_H96,15,T (degC),0.5164521336555481,False
+chronos,native_H96,15,Tpot (K),0.8811518549919128,False
+chronos,native_H96,15,Tdew (degC),0.1731136590242386,False
+chronos,native_H96,15,rh (%),0.2661024332046509,False
+chronos,native_H96,15,VPmax (mbar),1.024001955986023,False
+chronos,native_H96,15,VPact (mbar),1.0505300760269165,False
+chronos,native_H96,15,VPdef (mbar),0.37907496094703674,False
+chronos,native_H96,15,sh (g/kg),0.5734975934028625,False
+chronos,native_H96,15,H2OC (mmol/mol),0.876042902469635,False
+chronos,native_H96,15,rho (g/m**3),0.6066398024559021,False
+chronos,native_H96,15,wv (m/s),0.25664398074150085,False
+chronos,native_H96,15,max. wv (m/s),0.5755031704902649,False
+chronos,native_H96,15,wd (deg),0.24219290912151337,False
+chronos,native_H96,15,rain (mm),0.02935892902314663,False
+chronos,native_H96,15,raining (s),0.21060232818126678,False
+chronos,native_H96,15,SWDR (W/m�),0.636851966381073,False
+chronos,native_H96,15,PAR (�mol/m�/s),1.2100054025650024,False
+chronos,native_H96,15,max. PAR (�mol/m�/s),1.199042558670044,False
+chronos,native_H96,15,Tlog (degC),1.1802304983139038,False
+chronos,native_H96,15,OT,0.7922834753990173,False
+chronos,native_H96,16,p (mbar),2.028657913208008,False
+chronos,native_H96,16,T (degC),0.7088961601257324,False
+chronos,native_H96,16,Tpot (K),0.7573360800743103,False
+chronos,native_H96,16,Tdew (degC),0.6341177821159363,False
+chronos,native_H96,16,rh (%),1.162286400794983,False
+chronos,native_H96,16,VPmax (mbar),0.4656488001346588,False
+chronos,native_H96,16,VPact (mbar),0.45528340339660645,False
+chronos,native_H96,16,VPdef (mbar),0.7173039317131042,False
+chronos,native_H96,16,sh (g/kg),0.4086744785308838,False
+chronos,native_H96,16,H2OC (mmol/mol),0.27346959710121155,False
+chronos,native_H96,16,rho (g/m**3),0.3765750825405121,False
+chronos,native_H96,16,wv (m/s),0.24464106559753418,False
+chronos,native_H96,16,max. wv (m/s),0.46524402499198914,False
+chronos,native_H96,16,wd (deg),1.3104954957962036,False
+chronos,native_H96,16,rain (mm),0.0,True
+chronos,native_H96,16,raining (s),0.0016275402158498764,False
+chronos,native_H96,16,SWDR (W/m�),1.6041479110717773,False
+chronos,native_H96,16,PAR (�mol/m�/s),0.8229551315307617,False
+chronos,native_H96,16,max. PAR (�mol/m�/s),1.4281435012817383,False
+chronos,native_H96,16,Tlog (degC),0.5049702525138855,False
+chronos,native_H96,16,OT,1.0774306058883667,False
+chronos,native_H96,17,p (mbar),0.37321737408638,False
+chronos,native_H96,17,T (degC),0.9959109425544739,False
+chronos,native_H96,17,Tpot (K),0.6826074719429016,False
+chronos,native_H96,17,Tdew (degC),1.270363688468933,False
+chronos,native_H96,17,rh (%),0.6731370091438293,False
+chronos,native_H96,17,VPmax (mbar),0.5251593589782715,False
+chronos,native_H96,17,VPact (mbar),1.148890495300293,False
+chronos,native_H96,17,VPdef (mbar),0.5197789072990417,False
+chronos,native_H96,17,sh (g/kg),0.9357978701591492,False
+chronos,native_H96,17,H2OC (mmol/mol),1.1175748109817505,False
+chronos,native_H96,17,rho (g/m**3),0.6677217483520508,False
+chronos,native_H96,17,wv (m/s),0.7216293215751648,False
+chronos,native_H96,17,max. wv (m/s),0.7168490290641785,False
+chronos,native_H96,17,wd (deg),0.457338809967041,False
+chronos,native_H96,17,rain (mm),0.0009919777512550354,False
+chronos,native_H96,17,raining (s),0.0007503678207285702,False
+chronos,native_H96,17,SWDR (W/m�),0.619145393371582,False
+chronos,native_H96,17,PAR (�mol/m�/s),0.6662330627441406,False
+chronos,native_H96,17,max. PAR (�mol/m�/s),0.621060848236084,False
+chronos,native_H96,17,Tlog (degC),0.7316117286682129,False
+chronos,native_H96,17,OT,0.6119606494903564,False
+chronos,native_H96,18,p (mbar),0.11663937568664551,False
+chronos,native_H96,18,T (degC),0.4173175096511841,False
+chronos,native_H96,18,Tpot (K),0.8158130049705505,False
+chronos,native_H96,18,Tdew (degC),0.580549955368042,False
+chronos,native_H96,18,rh (%),0.08712360262870789,False
+chronos,native_H96,18,VPmax (mbar),0.47325730323791504,False
+chronos,native_H96,18,VPact (mbar),0.3013823926448822,False
+chronos,native_H96,18,VPdef (mbar),0.17890465259552002,False
+chronos,native_H96,18,sh (g/kg),0.5141183733940125,False
+chronos,native_H96,18,H2OC (mmol/mol),0.3756352663040161,False
+chronos,native_H96,18,rho (g/m**3),0.2611604630947113,False
+chronos,native_H96,18,wv (m/s),0.40934646129608154,False
+chronos,native_H96,18,max. wv (m/s),0.37089261412620544,False
+chronos,native_H96,18,wd (deg),1.5079927444458008,False
+chronos,native_H96,18,rain (mm),0.16333317756652832,False
+chronos,native_H96,18,raining (s),3.012436628341675,False
+chronos,native_H96,18,SWDR (W/m�),0.18951456248760223,False
+chronos,native_H96,18,PAR (�mol/m�/s),0.19600112736225128,False
+chronos,native_H96,18,max. PAR (�mol/m�/s),0.20682001113891602,False
+chronos,native_H96,18,Tlog (degC),0.4403487741947174,False
+chronos,native_H96,18,OT,0.7644309997558594,False
+chronos,native_H96,19,p (mbar),0.30934563279151917,False
+chronos,native_H96,19,T (degC),0.6956023573875427,False
+chronos,native_H96,19,Tpot (K),0.7147167325019836,False
+chronos,native_H96,19,Tdew (degC),0.28782346844673157,False
+chronos,native_H96,19,rh (%),0.7790181040763855,False
+chronos,native_H96,19,VPmax (mbar),0.7878260612487793,False
+chronos,native_H96,19,VPact (mbar),0.8068190217018127,False
+chronos,native_H96,19,VPdef (mbar),0.5618919730186462,False
+chronos,native_H96,19,sh (g/kg),0.6430349349975586,False
+chronos,native_H96,19,H2OC (mmol/mol),0.7647393345832825,False
+chronos,native_H96,19,rho (g/m**3),1.4704102277755737,False
+chronos,native_H96,19,wv (m/s),0.5196495652198792,False
+chronos,native_H96,19,max. wv (m/s),0.6402842402458191,False
+chronos,native_H96,19,wd (deg),0.7147272229194641,False
+chronos,native_H96,19,rain (mm),0.0007448692922480404,False
+chronos,native_H96,19,raining (s),0.04446506127715111,False
+chronos,native_H96,19,SWDR (W/m�),0.7737091183662415,False
+chronos,native_H96,19,PAR (�mol/m�/s),0.7824232578277588,False
+chronos,native_H96,19,max. PAR (�mol/m�/s),0.6690011024475098,False
+chronos,native_H96,19,Tlog (degC),0.39801692962646484,False
+chronos,native_H96,19,OT,0.6500189900398254,False
+chronos,hourly_H96_fixedsample,0,p (mbar),0.7539043426513672,False
+chronos,hourly_H96_fixedsample,0,T (degC),1.1211222410202026,False
+chronos,hourly_H96_fixedsample,0,Tpot (K),1.4619773626327515,False
+chronos,hourly_H96_fixedsample,0,Tdew (degC),1.2463301420211792,False
+chronos,hourly_H96_fixedsample,0,rh (%),0.817037045955658,False
+chronos,hourly_H96_fixedsample,0,VPmax (mbar),0.7638322710990906,False
+chronos,hourly_H96_fixedsample,0,VPact (mbar),0.5703968405723572,False
+chronos,hourly_H96_fixedsample,0,VPdef (mbar),0.45888862013816833,False
+chronos,hourly_H96_fixedsample,0,sh (g/kg),0.7085188031196594,False
+chronos,hourly_H96_fixedsample,0,H2OC (mmol/mol),0.9891303181648254,False
+chronos,hourly_H96_fixedsample,0,rho (g/m**3),0.3788692057132721,False
+chronos,hourly_H96_fixedsample,0,wv (m/s),0.2597096860408783,False
+chronos,hourly_H96_fixedsample,0,max. wv (m/s),0.33998334407806396,False
+chronos,hourly_H96_fixedsample,0,wd (deg),1.1819827556610107,False
+chronos,hourly_H96_fixedsample,0,rain (mm),0.5786212682723999,False
+chronos,hourly_H96_fixedsample,0,raining (s),0.006590651348233223,False
+chronos,hourly_H96_fixedsample,0,SWDR (W/m�),0.29852309823036194,False
+chronos,hourly_H96_fixedsample,0,PAR (�mol/m�/s),0.42419710755348206,False
+chronos,hourly_H96_fixedsample,0,max. PAR (�mol/m�/s),0.33110377192497253,False
+chronos,hourly_H96_fixedsample,0,Tlog (degC),2.208101987838745,False
+chronos,hourly_H96_fixedsample,0,OT,1.4709409475326538,False
+chronos,hourly_H96_fixedsample,1,p (mbar),1.133055329322815,False
+chronos,hourly_H96_fixedsample,1,T (degC),0.6018261313438416,False
+chronos,hourly_H96_fixedsample,1,Tpot (K),0.7122920155525208,False
+chronos,hourly_H96_fixedsample,1,Tdew (degC),0.8937602043151855,False
+chronos,hourly_H96_fixedsample,1,rh (%),1.5169461965560913,False
+chronos,hourly_H96_fixedsample,1,VPmax (mbar),0.4949134290218353,False
+chronos,hourly_H96_fixedsample,1,VPact (mbar),0.8745522499084473,False
+chronos,hourly_H96_fixedsample,1,VPdef (mbar),0.9738245606422424,False
+chronos,hourly_H96_fixedsample,1,sh (g/kg),0.8084659576416016,False
+chronos,hourly_H96_fixedsample,1,H2OC (mmol/mol),1.0409451723098755,False
+chronos,hourly_H96_fixedsample,1,rho (g/m**3),1.0322734117507935,False
+chronos,hourly_H96_fixedsample,1,wv (m/s),2.5347633361816406,False
+chronos,hourly_H96_fixedsample,1,max. wv (m/s),2.847893476486206,False
+chronos,hourly_H96_fixedsample,1,wd (deg),0.3139536678791046,False
+chronos,hourly_H96_fixedsample,1,rain (mm),0.7033546566963196,False
+chronos,hourly_H96_fixedsample,1,raining (s),0.23788590729236603,False
+chronos,hourly_H96_fixedsample,1,SWDR (W/m�),0.42363181710243225,False
+chronos,hourly_H96_fixedsample,1,PAR (�mol/m�/s),0.38271257281303406,False
+chronos,hourly_H96_fixedsample,1,max. PAR (�mol/m�/s),0.31297019124031067,False
+chronos,hourly_H96_fixedsample,1,Tlog (degC),0.6155055165290833,False
+chronos,hourly_H96_fixedsample,1,OT,0.7186288833618164,False
+chronos,hourly_H96_fixedsample,2,p (mbar),0.555814802646637,False
+chronos,hourly_H96_fixedsample,2,T (degC),0.7151296138763428,False
+chronos,hourly_H96_fixedsample,2,Tpot (K),0.6445757746696472,False
+chronos,hourly_H96_fixedsample,2,Tdew (degC),1.006824016571045,False
+chronos,hourly_H96_fixedsample,2,rh (%),0.849879801273346,False
+chronos,hourly_H96_fixedsample,2,VPmax (mbar),0.4615436792373657,False
+chronos,hourly_H96_fixedsample,2,VPact (mbar),1.002358078956604,False
+chronos,hourly_H96_fixedsample,2,VPdef (mbar),0.4740523397922516,False
+chronos,hourly_H96_fixedsample,2,sh (g/kg),0.45910897850990295,False
+chronos,hourly_H96_fixedsample,2,H2OC (mmol/mol),0.5553478598594666,False
+chronos,hourly_H96_fixedsample,2,rho (g/m**3),0.9267618060112,False
+chronos,hourly_H96_fixedsample,2,wv (m/s),1.0337170362472534,False
+chronos,hourly_H96_fixedsample,2,max. wv (m/s),0.9604056477546692,False
+chronos,hourly_H96_fixedsample,2,wd (deg),1.1193767786026,False
+chronos,hourly_H96_fixedsample,2,rain (mm),0.11999119073152542,False
+chronos,hourly_H96_fixedsample,2,raining (s),0.9584748148918152,False
+chronos,hourly_H96_fixedsample,2,SWDR (W/m�),0.37908491492271423,False
+chronos,hourly_H96_fixedsample,2,PAR (�mol/m�/s),0.3319713771343231,False
+chronos,hourly_H96_fixedsample,2,max. PAR (�mol/m�/s),0.5094692707061768,False
+chronos,hourly_H96_fixedsample,2,Tlog (degC),0.5125564336776733,False
+chronos,hourly_H96_fixedsample,2,OT,0.004894471261650324,False
+chronos,hourly_H96_fixedsample,3,p (mbar),1.6522326469421387,False
+chronos,hourly_H96_fixedsample,3,T (degC),1.4731849431991577,False
+chronos,hourly_H96_fixedsample,3,Tpot (K),1.3688850402832031,False
+chronos,hourly_H96_fixedsample,3,Tdew (degC),1.7980728149414062,False
+chronos,hourly_H96_fixedsample,3,rh (%),1.1628869771957397,False
+chronos,hourly_H96_fixedsample,3,VPmax (mbar),1.8421138525009155,False
+chronos,hourly_H96_fixedsample,3,VPact (mbar),2.5796616077423096,False
+chronos,hourly_H96_fixedsample,3,VPdef (mbar),1.0581961870193481,False
+chronos,hourly_H96_fixedsample,3,sh (g/kg),1.3180629014968872,False
+chronos,hourly_H96_fixedsample,3,H2OC (mmol/mol),1.9900907278060913,False
+chronos,hourly_H96_fixedsample,3,rho (g/m**3),0.6109185218811035,False
+chronos,hourly_H96_fixedsample,3,wv (m/s),0.39283862709999084,False
+chronos,hourly_H96_fixedsample,3,max. wv (m/s),0.37240996956825256,False
+chronos,hourly_H96_fixedsample,3,wd (deg),1.5785914659500122,False
+chronos,hourly_H96_fixedsample,3,rain (mm),0.05800237879157066,False
+chronos,hourly_H96_fixedsample,3,raining (s),0.69475919008255,False
+chronos,hourly_H96_fixedsample,3,SWDR (W/m�),0.3253352642059326,False
+chronos,hourly_H96_fixedsample,3,PAR (�mol/m�/s),0.27864983677864075,False
+chronos,hourly_H96_fixedsample,3,max. PAR (�mol/m�/s),0.21839924156665802,False
+chronos,hourly_H96_fixedsample,3,Tlog (degC),1.7086910009384155,False
+chronos,hourly_H96_fixedsample,3,OT,3.1043241024017334,False
+chronos,hourly_H96_fixedsample,4,p (mbar),1.5319551229476929,False
+chronos,hourly_H96_fixedsample,4,T (degC),1.072669506072998,False
+chronos,hourly_H96_fixedsample,4,Tpot (K),0.46796855330467224,False
+chronos,hourly_H96_fixedsample,4,Tdew (degC),0.5601380467414856,False
+chronos,hourly_H96_fixedsample,4,rh (%),0.9208497405052185,False
+chronos,hourly_H96_fixedsample,4,VPmax (mbar),1.2415863275527954,False
+chronos,hourly_H96_fixedsample,4,VPact (mbar),0.548725426197052,False
+chronos,hourly_H96_fixedsample,4,VPdef (mbar),1.251214623451233,False
+chronos,hourly_H96_fixedsample,4,sh (g/kg),0.33071812987327576,False
+chronos,hourly_H96_fixedsample,4,H2OC (mmol/mol),0.7105710506439209,False
+chronos,hourly_H96_fixedsample,4,rho (g/m**3),0.6930279731750488,False
+chronos,hourly_H96_fixedsample,4,wv (m/s),0.47197404503822327,False
+chronos,hourly_H96_fixedsample,4,max. wv (m/s),0.5266391038894653,False
+chronos,hourly_H96_fixedsample,4,wd (deg),0.9701798558235168,False
+chronos,hourly_H96_fixedsample,4,rain (mm),0.0005813746829517186,False
+chronos,hourly_H96_fixedsample,4,raining (s),0.002174306893721223,False
+chronos,hourly_H96_fixedsample,4,SWDR (W/m�),0.28932926058769226,False
+chronos,hourly_H96_fixedsample,4,PAR (�mol/m�/s),0.27659860253334045,False
+chronos,hourly_H96_fixedsample,4,max. PAR (�mol/m�/s),0.24197524785995483,False
+chronos,hourly_H96_fixedsample,4,Tlog (degC),0.6316814422607422,False
+chronos,hourly_H96_fixedsample,4,OT,0.706233024597168,False
+chronos,hourly_H96_fixedsample,5,p (mbar),1.1584800481796265,False
+chronos,hourly_H96_fixedsample,5,T (degC),0.3113321363925934,False
+chronos,hourly_H96_fixedsample,5,Tpot (K),0.625683605670929,False
+chronos,hourly_H96_fixedsample,5,Tdew (degC),0.2413487583398819,False
+chronos,hourly_H96_fixedsample,5,rh (%),0.36022648215293884,False
+chronos,hourly_H96_fixedsample,5,VPmax (mbar),0.3569405972957611,False
+chronos,hourly_H96_fixedsample,5,VPact (mbar),0.2221391648054123,False
+chronos,hourly_H96_fixedsample,5,VPdef (mbar),0.48233404755592346,False
+chronos,hourly_H96_fixedsample,5,sh (g/kg),0.5446181893348694,False
+chronos,hourly_H96_fixedsample,5,H2OC (mmol/mol),0.2614940106868744,False
+chronos,hourly_H96_fixedsample,5,rho (g/m**3),0.24500642716884613,False
+chronos,hourly_H96_fixedsample,5,wv (m/s),0.8207798004150391,False
+chronos,hourly_H96_fixedsample,5,max. wv (m/s),1.211185097694397,False
+chronos,hourly_H96_fixedsample,5,wd (deg),0.9697296023368835,False
+chronos,hourly_H96_fixedsample,5,rain (mm),0.0011569334892556071,False
+chronos,hourly_H96_fixedsample,5,raining (s),0.0029818322509527206,False
+chronos,hourly_H96_fixedsample,5,SWDR (W/m�),0.07529139518737793,False
+chronos,hourly_H96_fixedsample,5,PAR (�mol/m�/s),0.10152224451303482,False
+chronos,hourly_H96_fixedsample,5,max. PAR (�mol/m�/s),0.06445128470659256,False
+chronos,hourly_H96_fixedsample,5,Tlog (degC),1.0385193824768066,False
+chronos,hourly_H96_fixedsample,5,OT,0.5611730217933655,False
+chronos,hourly_H96_fixedsample,6,p (mbar),1.249038815498352,False
+chronos,hourly_H96_fixedsample,6,T (degC),0.8987841010093689,False
+chronos,hourly_H96_fixedsample,6,Tpot (K),1.1005984544754028,False
+chronos,hourly_H96_fixedsample,6,Tdew (degC),1.1547762155532837,False
+chronos,hourly_H96_fixedsample,6,rh (%),0.7060562968254089,False
+chronos,hourly_H96_fixedsample,6,VPmax (mbar),1.2713850736618042,False
+chronos,hourly_H96_fixedsample,6,VPact (mbar),1.5005083084106445,False
+chronos,hourly_H96_fixedsample,6,VPdef (mbar),0.8355962634086609,False
+chronos,hourly_H96_fixedsample,6,sh (g/kg),1.6447170972824097,False
+chronos,hourly_H96_fixedsample,6,H2OC (mmol/mol),1.541638731956482,False
+chronos,hourly_H96_fixedsample,6,rho (g/m**3),0.9553589820861816,False
+chronos,hourly_H96_fixedsample,6,wv (m/s),0.5825148224830627,False
+chronos,hourly_H96_fixedsample,6,max. wv (m/s),0.6512618064880371,False
+chronos,hourly_H96_fixedsample,6,wd (deg),1.0023012161254883,False
+chronos,hourly_H96_fixedsample,6,rain (mm),0.7372191548347473,False
+chronos,hourly_H96_fixedsample,6,raining (s),0.9804431796073914,False
+chronos,hourly_H96_fixedsample,6,SWDR (W/m�),0.5516886115074158,False
+chronos,hourly_H96_fixedsample,6,PAR (�mol/m�/s),0.5369531512260437,False
+chronos,hourly_H96_fixedsample,6,max. PAR (�mol/m�/s),0.3244611918926239,False
+chronos,hourly_H96_fixedsample,6,Tlog (degC),1.4074125289916992,False
+chronos,hourly_H96_fixedsample,6,OT,0.7368233799934387,False
+chronos,hourly_H96_fixedsample,7,p (mbar),0.8552089333534241,False
+chronos,hourly_H96_fixedsample,7,T (degC),0.44246768951416016,False
+chronos,hourly_H96_fixedsample,7,Tpot (K),0.3713218867778778,False
+chronos,hourly_H96_fixedsample,7,Tdew (degC),0.7259895205497742,False
+chronos,hourly_H96_fixedsample,7,rh (%),0.44351550936698914,False
+chronos,hourly_H96_fixedsample,7,VPmax (mbar),0.38703402876853943,False
+chronos,hourly_H96_fixedsample,7,VPact (mbar),0.6475504040718079,False
+chronos,hourly_H96_fixedsample,7,VPdef (mbar),0.5036274790763855,False
+chronos,hourly_H96_fixedsample,7,sh (g/kg),0.43114173412323,False
+chronos,hourly_H96_fixedsample,7,H2OC (mmol/mol),0.7257179617881775,False
+chronos,hourly_H96_fixedsample,7,rho (g/m**3),0.4337950050830841,False
+chronos,hourly_H96_fixedsample,7,wv (m/s),1.122725486755371,False
+chronos,hourly_H96_fixedsample,7,max. wv (m/s),1.0899970531463623,False
+chronos,hourly_H96_fixedsample,7,wd (deg),0.6952144503593445,False
+chronos,hourly_H96_fixedsample,7,rain (mm),0.012715005315840244,False
+chronos,hourly_H96_fixedsample,7,raining (s),0.04489652439951897,False
+chronos,hourly_H96_fixedsample,7,SWDR (W/m�),0.4011537730693817,False
+chronos,hourly_H96_fixedsample,7,PAR (�mol/m�/s),0.49167320132255554,False
+chronos,hourly_H96_fixedsample,7,max. PAR (�mol/m�/s),0.5267468094825745,False
+chronos,hourly_H96_fixedsample,7,Tlog (degC),0.6163997054100037,False
+chronos,hourly_H96_fixedsample,7,OT,0.6225827932357788,False
+chronos,hourly_H96_fixedsample,8,p (mbar),0.2703157961368561,False
+chronos,hourly_H96_fixedsample,8,T (degC),1.9378851652145386,False
+chronos,hourly_H96_fixedsample,8,Tpot (K),0.4273265302181244,False
+chronos,hourly_H96_fixedsample,8,Tdew (degC),0.8550613522529602,False
+chronos,hourly_H96_fixedsample,8,rh (%),0.9013035893440247,False
+chronos,hourly_H96_fixedsample,8,VPmax (mbar),0.8891908526420593,False
+chronos,hourly_H96_fixedsample,8,VPact (mbar),1.4045568704605103,False
+chronos,hourly_H96_fixedsample,8,VPdef (mbar),1.096665382385254,False
+chronos,hourly_H96_fixedsample,8,sh (g/kg),1.9869155883789062,False
+chronos,hourly_H96_fixedsample,8,H2OC (mmol/mol),1.056107759475708,False
+chronos,hourly_H96_fixedsample,8,rho (g/m**3),1.8062282800674438,False
+chronos,hourly_H96_fixedsample,8,wv (m/s),1.262210726737976,False
+chronos,hourly_H96_fixedsample,8,max. wv (m/s),0.7667179107666016,False
+chronos,hourly_H96_fixedsample,8,wd (deg),1.5381056070327759,False
+chronos,hourly_H96_fixedsample,8,rain (mm),0.31222543120384216,False
+chronos,hourly_H96_fixedsample,8,raining (s),0.43824639916419983,False
+chronos,hourly_H96_fixedsample,8,SWDR (W/m�),0.5563309788703918,False
+chronos,hourly_H96_fixedsample,8,PAR (�mol/m�/s),0.5773982405662537,False
+chronos,hourly_H96_fixedsample,8,max. PAR (�mol/m�/s),0.4019571840763092,False
+chronos,hourly_H96_fixedsample,8,Tlog (degC),0.7779121398925781,False
+chronos,hourly_H96_fixedsample,8,OT,0.5320355892181396,False
+chronos,hourly_H96_fixedsample,9,p (mbar),0.3973652124404907,False
+chronos,hourly_H96_fixedsample,9,T (degC),0.7543256282806396,False
+chronos,hourly_H96_fixedsample,9,Tpot (K),0.4809286594390869,False
+chronos,hourly_H96_fixedsample,9,Tdew (degC),1.1985622644424438,False
+chronos,hourly_H96_fixedsample,9,rh (%),0.5672839283943176,False
+chronos,hourly_H96_fixedsample,9,VPmax (mbar),0.5244459509849548,False
+chronos,hourly_H96_fixedsample,9,VPact (mbar),0.5794858932495117,False
+chronos,hourly_H96_fixedsample,9,VPdef (mbar),0.4540880620479584,False
+chronos,hourly_H96_fixedsample,9,sh (g/kg),0.8078058362007141,False
+chronos,hourly_H96_fixedsample,9,H2OC (mmol/mol),0.9012110829353333,False
+chronos,hourly_H96_fixedsample,9,rho (g/m**3),0.6783086657524109,False
+chronos,hourly_H96_fixedsample,9,wv (m/s),1.0254591703414917,False
+chronos,hourly_H96_fixedsample,9,max. wv (m/s),0.9769461750984192,False
+chronos,hourly_H96_fixedsample,9,wd (deg),0.3786714971065521,False
+chronos,hourly_H96_fixedsample,9,rain (mm),0.0015702638775110245,False
+chronos,hourly_H96_fixedsample,9,raining (s),0.08980304002761841,False
+chronos,hourly_H96_fixedsample,9,SWDR (W/m�),0.42253461480140686,False
+chronos,hourly_H96_fixedsample,9,PAR (�mol/m�/s),0.41083046793937683,False
+chronos,hourly_H96_fixedsample,9,max. PAR (�mol/m�/s),0.4622766971588135,False
+chronos,hourly_H96_fixedsample,9,Tlog (degC),0.4748307466506958,False
+chronos,hourly_H96_fixedsample,9,OT,0.4870593547821045,False
+chronos,hourly_H96_fixedsample,10,p (mbar),0.30508285760879517,False
+chronos,hourly_H96_fixedsample,10,T (degC),0.453609436750412,False
+chronos,hourly_H96_fixedsample,10,Tpot (K),0.4741181433200836,False
+chronos,hourly_H96_fixedsample,10,Tdew (degC),1.3671627044677734,False
+chronos,hourly_H96_fixedsample,10,rh (%),0.519564151763916,False
+chronos,hourly_H96_fixedsample,10,VPmax (mbar),0.6431837677955627,False
+chronos,hourly_H96_fixedsample,10,VPact (mbar),0.6030406355857849,False
+chronos,hourly_H96_fixedsample,10,VPdef (mbar),0.8089323043823242,False
+chronos,hourly_H96_fixedsample,10,sh (g/kg),1.4948501586914062,False
+chronos,hourly_H96_fixedsample,10,H2OC (mmol/mol),1.25089430809021,False
+chronos,hourly_H96_fixedsample,10,rho (g/m**3),0.47182759642601013,False
+chronos,hourly_H96_fixedsample,10,wv (m/s),0.6123089790344238,False
+chronos,hourly_H96_fixedsample,10,max. wv (m/s),0.6732842326164246,False
+chronos,hourly_H96_fixedsample,10,wd (deg),1.5943139791488647,False
+chronos,hourly_H96_fixedsample,10,rain (mm),0.0006911181262694299,False
+chronos,hourly_H96_fixedsample,10,raining (s),0.0011687526712194085,False
+chronos,hourly_H96_fixedsample,10,SWDR (W/m�),0.35633835196495056,False
+chronos,hourly_H96_fixedsample,10,PAR (�mol/m�/s),0.28848347067832947,False
+chronos,hourly_H96_fixedsample,10,max. PAR (�mol/m�/s),0.11835701018571854,False
+chronos,hourly_H96_fixedsample,10,Tlog (degC),0.5820934772491455,False
+chronos,hourly_H96_fixedsample,10,OT,0.4397268295288086,False
+chronos,hourly_H96_fixedsample,11,p (mbar),1.128478765487671,False
+chronos,hourly_H96_fixedsample,11,T (degC),0.8637488484382629,False
+chronos,hourly_H96_fixedsample,11,Tpot (K),1.2924097776412964,False
+chronos,hourly_H96_fixedsample,11,Tdew (degC),0.8700364232063293,False
+chronos,hourly_H96_fixedsample,11,rh (%),0.35674071311950684,False
+chronos,hourly_H96_fixedsample,11,VPmax (mbar),0.8103032112121582,False
+chronos,hourly_H96_fixedsample,11,VPact (mbar),1.1522332429885864,False
+chronos,hourly_H96_fixedsample,11,VPdef (mbar),0.7489535212516785,False
+chronos,hourly_H96_fixedsample,11,sh (g/kg),1.0177541971206665,False
+chronos,hourly_H96_fixedsample,11,H2OC (mmol/mol),1.8968042135238647,False
+chronos,hourly_H96_fixedsample,11,rho (g/m**3),1.1748119592666626,False
+chronos,hourly_H96_fixedsample,11,wv (m/s),0.9108279347419739,False
+chronos,hourly_H96_fixedsample,11,max. wv (m/s),0.716927707195282,False
+chronos,hourly_H96_fixedsample,11,wd (deg),1.092128872871399,False
+chronos,hourly_H96_fixedsample,11,rain (mm),0.19038981199264526,False
+chronos,hourly_H96_fixedsample,11,raining (s),0.16406475007534027,False
+chronos,hourly_H96_fixedsample,11,SWDR (W/m�),0.2982662618160248,False
+chronos,hourly_H96_fixedsample,11,PAR (�mol/m�/s),0.15616759657859802,False
+chronos,hourly_H96_fixedsample,11,max. PAR (�mol/m�/s),0.11559376865625381,False
+chronos,hourly_H96_fixedsample,11,Tlog (degC),1.0056437253952026,False
+chronos,hourly_H96_fixedsample,11,OT,18.131444931030273,False
+chronos,hourly_H96_fixedsample,12,p (mbar),0.9425031542778015,False
+chronos,hourly_H96_fixedsample,12,T (degC),0.4250064790248871,False
+chronos,hourly_H96_fixedsample,12,Tpot (K),0.702719509601593,False
+chronos,hourly_H96_fixedsample,12,Tdew (degC),0.7303952574729919,False
+chronos,hourly_H96_fixedsample,12,rh (%),0.475028395652771,False
+chronos,hourly_H96_fixedsample,12,VPmax (mbar),0.8427448272705078,False
+chronos,hourly_H96_fixedsample,12,VPact (mbar),1.067108392715454,False
+chronos,hourly_H96_fixedsample,12,VPdef (mbar),0.32687830924987793,False
+chronos,hourly_H96_fixedsample,12,sh (g/kg),0.5655632615089417,False
+chronos,hourly_H96_fixedsample,12,H2OC (mmol/mol),1.0111298561096191,False
+chronos,hourly_H96_fixedsample,12,rho (g/m**3),0.9037191271781921,False
+chronos,hourly_H96_fixedsample,12,wv (m/s),1.6289807558059692,False
+chronos,hourly_H96_fixedsample,12,max. wv (m/s),1.7379436492919922,False
+chronos,hourly_H96_fixedsample,12,wd (deg),0.5363110899925232,False
+chronos,hourly_H96_fixedsample,12,rain (mm),0.11618498712778091,False
+chronos,hourly_H96_fixedsample,12,raining (s),0.17548157274723053,False
+chronos,hourly_H96_fixedsample,12,SWDR (W/m�),0.3754696846008301,False
+chronos,hourly_H96_fixedsample,12,PAR (�mol/m�/s),0.363258957862854,False
+chronos,hourly_H96_fixedsample,12,max. PAR (�mol/m�/s),0.3087739944458008,False
+chronos,hourly_H96_fixedsample,12,Tlog (degC),0.36405181884765625,False
+chronos,hourly_H96_fixedsample,12,OT,0.02466949261724949,False
+chronos,hourly_H96_fixedsample,13,p (mbar),1.38080632686615,False
+chronos,hourly_H96_fixedsample,13,T (degC),0.7305068373680115,False
+chronos,hourly_H96_fixedsample,13,Tpot (K),0.8732979893684387,False
+chronos,hourly_H96_fixedsample,13,Tdew (degC),0.5227971076965332,False
+chronos,hourly_H96_fixedsample,13,rh (%),0.4309333860874176,False
+chronos,hourly_H96_fixedsample,13,VPmax (mbar),0.7101399302482605,False
+chronos,hourly_H96_fixedsample,13,VPact (mbar),0.4183367192745209,False
+chronos,hourly_H96_fixedsample,13,VPdef (mbar),0.4045847952365875,False
+chronos,hourly_H96_fixedsample,13,sh (g/kg),0.4534079134464264,False
+chronos,hourly_H96_fixedsample,13,H2OC (mmol/mol),0.49346908926963806,False
+chronos,hourly_H96_fixedsample,13,rho (g/m**3),0.7029768824577332,False
+chronos,hourly_H96_fixedsample,13,wv (m/s),0.3930635154247284,False
+chronos,hourly_H96_fixedsample,13,max. wv (m/s),0.3620361387729645,False
+chronos,hourly_H96_fixedsample,13,wd (deg),0.9792382717132568,False
+chronos,hourly_H96_fixedsample,13,rain (mm),0.005725305527448654,False
+chronos,hourly_H96_fixedsample,13,raining (s),0.003328160382807255,False
+chronos,hourly_H96_fixedsample,13,SWDR (W/m�),0.20299233496189117,False
+chronos,hourly_H96_fixedsample,13,PAR (�mol/m�/s),0.1418176144361496,False
+chronos,hourly_H96_fixedsample,13,max. PAR (�mol/m�/s),0.07946477830410004,False
+chronos,hourly_H96_fixedsample,13,Tlog (degC),0.9434633851051331,False
+chronos,hourly_H96_fixedsample,13,OT,0.9528355002403259,False
+chronos,hourly_H96_fixedsample,14,p (mbar),1.1162636280059814,False
+chronos,hourly_H96_fixedsample,14,T (degC),0.7930086255073547,False
+chronos,hourly_H96_fixedsample,14,Tpot (K),0.6708498001098633,False
+chronos,hourly_H96_fixedsample,14,Tdew (degC),0.40231919288635254,False
+chronos,hourly_H96_fixedsample,14,rh (%),0.5502150058746338,False
+chronos,hourly_H96_fixedsample,14,VPmax (mbar),0.2624684274196625,False
+chronos,hourly_H96_fixedsample,14,VPact (mbar),0.46859994530677795,False
+chronos,hourly_H96_fixedsample,14,VPdef (mbar),0.3796464502811432,False
+chronos,hourly_H96_fixedsample,14,sh (g/kg),0.5337479710578918,False
+chronos,hourly_H96_fixedsample,14,H2OC (mmol/mol),0.9434377551078796,False
+chronos,hourly_H96_fixedsample,14,rho (g/m**3),0.4913358986377716,False
+chronos,hourly_H96_fixedsample,14,wv (m/s),0.9212629199028015,False
+chronos,hourly_H96_fixedsample,14,max. wv (m/s),0.6604465842247009,False
+chronos,hourly_H96_fixedsample,14,wd (deg),0.9274696707725525,False
+chronos,hourly_H96_fixedsample,14,rain (mm),0.0006220017676241696,False
+chronos,hourly_H96_fixedsample,14,raining (s),0.003332949010655284,False
+chronos,hourly_H96_fixedsample,14,SWDR (W/m�),0.2674574851989746,False
+chronos,hourly_H96_fixedsample,14,PAR (�mol/m�/s),0.27488934993743896,False
+chronos,hourly_H96_fixedsample,14,max. PAR (�mol/m�/s),0.22410257160663605,False
+chronos,hourly_H96_fixedsample,14,Tlog (degC),0.4258599281311035,False
+chronos,hourly_H96_fixedsample,14,OT,0.6781089901924133,False
+chronos,hourly_H96_fixedsample,15,p (mbar),0.6365225315093994,False
+chronos,hourly_H96_fixedsample,15,T (degC),0.6754512786865234,False
+chronos,hourly_H96_fixedsample,15,Tpot (K),0.7512040734291077,False
+chronos,hourly_H96_fixedsample,15,Tdew (degC),1.0250834226608276,False
+chronos,hourly_H96_fixedsample,15,rh (%),1.0899657011032104,False
+chronos,hourly_H96_fixedsample,15,VPmax (mbar),0.7277657985687256,False
+chronos,hourly_H96_fixedsample,15,VPact (mbar),0.6577113270759583,False
+chronos,hourly_H96_fixedsample,15,VPdef (mbar),0.6708130240440369,False
+chronos,hourly_H96_fixedsample,15,sh (g/kg),0.9211044907569885,False
+chronos,hourly_H96_fixedsample,15,H2OC (mmol/mol),1.1281250715255737,False
+chronos,hourly_H96_fixedsample,15,rho (g/m**3),0.47874900698661804,False
+chronos,hourly_H96_fixedsample,15,wv (m/s),0.5114594101905823,False
+chronos,hourly_H96_fixedsample,15,max. wv (m/s),0.4372383654117584,False
+chronos,hourly_H96_fixedsample,15,wd (deg),0.5015066862106323,False
+chronos,hourly_H96_fixedsample,15,rain (mm),0.534114420413971,False
+chronos,hourly_H96_fixedsample,15,raining (s),0.25934985280036926,False
+chronos,hourly_H96_fixedsample,15,SWDR (W/m�),0.24806399643421173,False
+chronos,hourly_H96_fixedsample,15,PAR (�mol/m�/s),0.22059953212738037,False
+chronos,hourly_H96_fixedsample,15,max. PAR (�mol/m�/s),0.20917880535125732,False
+chronos,hourly_H96_fixedsample,15,Tlog (degC),0.5756394863128662,False
+chronos,hourly_H96_fixedsample,15,OT,0.48007193207740784,False
+chronos,hourly_H96_fixedsample,16,p (mbar),2.738121747970581,False
+chronos,hourly_H96_fixedsample,16,T (degC),2.1200361251831055,False
+chronos,hourly_H96_fixedsample,16,Tpot (K),1.8811999559402466,False
+chronos,hourly_H96_fixedsample,16,Tdew (degC),1.5425459146499634,False
+chronos,hourly_H96_fixedsample,16,rh (%),1.050105094909668,False
+chronos,hourly_H96_fixedsample,16,VPmax (mbar),1.4083365201950073,False
+chronos,hourly_H96_fixedsample,16,VPact (mbar),1.0216383934020996,False
+chronos,hourly_H96_fixedsample,16,VPdef (mbar),0.8372113108634949,False
+chronos,hourly_H96_fixedsample,16,sh (g/kg),1.5823684930801392,False
+chronos,hourly_H96_fixedsample,16,H2OC (mmol/mol),1.0316941738128662,False
+chronos,hourly_H96_fixedsample,16,rho (g/m**3),1.9165006875991821,False
+chronos,hourly_H96_fixedsample,16,wv (m/s),0.27004680037498474,False
+chronos,hourly_H96_fixedsample,16,max. wv (m/s),0.3335002362728119,False
+chronos,hourly_H96_fixedsample,16,wd (deg),0.8692787289619446,False
+chronos,hourly_H96_fixedsample,16,rain (mm),0.0007330733351409435,False
+chronos,hourly_H96_fixedsample,16,raining (s),0.6103692650794983,False
+chronos,hourly_H96_fixedsample,16,SWDR (W/m�),0.7673519253730774,False
+chronos,hourly_H96_fixedsample,16,PAR (�mol/m�/s),0.5632324814796448,False
+chronos,hourly_H96_fixedsample,16,max. PAR (�mol/m�/s),0.15948182344436646,False
+chronos,hourly_H96_fixedsample,16,Tlog (degC),1.293300986289978,False
+chronos,hourly_H96_fixedsample,16,OT,1.9168027639389038,False
+chronos,hourly_H96_fixedsample,17,p (mbar),0.3582512140274048,False
+chronos,hourly_H96_fixedsample,17,T (degC),1.2988033294677734,False
+chronos,hourly_H96_fixedsample,17,Tpot (K),0.9752242565155029,False
+chronos,hourly_H96_fixedsample,17,Tdew (degC),0.7859260439872742,False
+chronos,hourly_H96_fixedsample,17,rh (%),0.9735433459281921,False
+chronos,hourly_H96_fixedsample,17,VPmax (mbar),1.2579171657562256,False
+chronos,hourly_H96_fixedsample,17,VPact (mbar),0.8442964553833008,False
+chronos,hourly_H96_fixedsample,17,VPdef (mbar),0.6568244099617004,False
+chronos,hourly_H96_fixedsample,17,sh (g/kg),0.692972719669342,False
+chronos,hourly_H96_fixedsample,17,H2OC (mmol/mol),0.8897764682769775,False
+chronos,hourly_H96_fixedsample,17,rho (g/m**3),0.5095319151878357,False
+chronos,hourly_H96_fixedsample,17,wv (m/s),0.724259078502655,False
+chronos,hourly_H96_fixedsample,17,max. wv (m/s),0.875565230846405,False
+chronos,hourly_H96_fixedsample,17,wd (deg),0.41283485293388367,False
+chronos,hourly_H96_fixedsample,17,rain (mm),0.09133461117744446,False
+chronos,hourly_H96_fixedsample,17,raining (s),0.362042635679245,False
+chronos,hourly_H96_fixedsample,17,SWDR (W/m�),0.25475892424583435,False
+chronos,hourly_H96_fixedsample,17,PAR (�mol/m�/s),0.19447970390319824,False
+chronos,hourly_H96_fixedsample,17,max. PAR (�mol/m�/s),0.22951793670654297,False
+chronos,hourly_H96_fixedsample,17,Tlog (degC),1.0035208463668823,False
+chronos,hourly_H96_fixedsample,17,OT,0.73529452085495,False
+chronos,hourly_H96_fixedsample,18,p (mbar),0.6219101548194885,False
+chronos,hourly_H96_fixedsample,18,T (degC),0.581465482711792,False
+chronos,hourly_H96_fixedsample,18,Tpot (K),0.37529242038726807,False
+chronos,hourly_H96_fixedsample,18,Tdew (degC),0.6571750640869141,False
+chronos,hourly_H96_fixedsample,18,rh (%),0.40048447251319885,False
+chronos,hourly_H96_fixedsample,18,VPmax (mbar),0.47476649284362793,False
+chronos,hourly_H96_fixedsample,18,VPact (mbar),0.8043012022972107,False
+chronos,hourly_H96_fixedsample,18,VPdef (mbar),0.34719952940940857,False
+chronos,hourly_H96_fixedsample,18,sh (g/kg),0.5697059631347656,False
+chronos,hourly_H96_fixedsample,18,H2OC (mmol/mol),0.375154972076416,False
+chronos,hourly_H96_fixedsample,18,rho (g/m**3),0.6874870657920837,False
+chronos,hourly_H96_fixedsample,18,wv (m/s),0.7843686938285828,False
+chronos,hourly_H96_fixedsample,18,max. wv (m/s),0.6049489378929138,False
+chronos,hourly_H96_fixedsample,18,wd (deg),0.5462964177131653,False
+chronos,hourly_H96_fixedsample,18,rain (mm),0.08404359966516495,False
+chronos,hourly_H96_fixedsample,18,raining (s),0.347957581281662,False
+chronos,hourly_H96_fixedsample,18,SWDR (W/m�),0.520358145236969,False
+chronos,hourly_H96_fixedsample,18,PAR (�mol/m�/s),0.48486337065696716,False
+chronos,hourly_H96_fixedsample,18,max. PAR (�mol/m�/s),0.41499730944633484,False
+chronos,hourly_H96_fixedsample,18,Tlog (degC),0.5383891463279724,False
+chronos,hourly_H96_fixedsample,18,OT,0.5199713110923767,False
+chronos,hourly_H96_fixedsample,19,p (mbar),0.9957111477851868,False
+chronos,hourly_H96_fixedsample,19,T (degC),0.42828869819641113,False
+chronos,hourly_H96_fixedsample,19,Tpot (K),0.4268013536930084,False
+chronos,hourly_H96_fixedsample,19,Tdew (degC),0.6106271743774414,False
+chronos,hourly_H96_fixedsample,19,rh (%),1.6297670602798462,False
+chronos,hourly_H96_fixedsample,19,VPmax (mbar),0.5263432860374451,False
+chronos,hourly_H96_fixedsample,19,VPact (mbar),1.3848432302474976,False
+chronos,hourly_H96_fixedsample,19,VPdef (mbar),0.5775925517082214,False
+chronos,hourly_H96_fixedsample,19,sh (g/kg),0.8860878944396973,False
+chronos,hourly_H96_fixedsample,19,H2OC (mmol/mol),0.4344523847103119,False
+chronos,hourly_H96_fixedsample,19,rho (g/m**3),1.0350115299224854,False
+chronos,hourly_H96_fixedsample,19,wv (m/s),1.1378051042556763,False
+chronos,hourly_H96_fixedsample,19,max. wv (m/s),1.562355399131775,False
+chronos,hourly_H96_fixedsample,19,wd (deg),0.4253169596195221,False
+chronos,hourly_H96_fixedsample,19,rain (mm),0.07818181067705154,False
+chronos,hourly_H96_fixedsample,19,raining (s),0.16715407371520996,False
+chronos,hourly_H96_fixedsample,19,SWDR (W/m�),0.3179558217525482,False
+chronos,hourly_H96_fixedsample,19,PAR (�mol/m�/s),0.24250058829784393,False
+chronos,hourly_H96_fixedsample,19,max. PAR (�mol/m�/s),0.24879276752471924,False
+chronos,hourly_H96_fixedsample,19,Tlog (degC),0.39558616280555725,False
+chronos,hourly_H96_fixedsample,19,OT,0.38511037826538086,False
+chronos,hourly_H16_fixedphys,0,p (mbar),0.7402449250221252,False
+chronos,hourly_H16_fixedphys,0,T (degC),0.4569498598575592,False
+chronos,hourly_H16_fixedphys,0,Tpot (K),0.26191961765289307,False
+chronos,hourly_H16_fixedphys,0,Tdew (degC),1.3647445440292358,False
+chronos,hourly_H16_fixedphys,0,rh (%),0.8858460187911987,False
+chronos,hourly_H16_fixedphys,0,VPmax (mbar),0.44258883595466614,False
+chronos,hourly_H16_fixedphys,0,VPact (mbar),0.6630499958992004,False
+chronos,hourly_H16_fixedphys,0,VPdef (mbar),0.4164504408836365,False
+chronos,hourly_H16_fixedphys,0,sh (g/kg),1.2797268629074097,False
+chronos,hourly_H16_fixedphys,0,H2OC (mmol/mol),1.3028345108032227,False
+chronos,hourly_H16_fixedphys,0,rho (g/m**3),0.8547782897949219,False
+chronos,hourly_H16_fixedphys,0,wv (m/s),0.2668111324310303,False
+chronos,hourly_H16_fixedphys,0,max. wv (m/s),0.3400030732154846,False
+chronos,hourly_H16_fixedphys,0,wd (deg),1.3798882961273193,False
+chronos,hourly_H16_fixedphys,0,rain (mm),0.0018569566309452057,False
+chronos,hourly_H16_fixedphys,0,raining (s),0.000734180212020874,False
+chronos,hourly_H16_fixedphys,0,SWDR (W/m�),1.2841851711273193,False
+chronos,hourly_H16_fixedphys,0,PAR (�mol/m�/s),0.8272140622138977,False
+chronos,hourly_H16_fixedphys,0,max. PAR (�mol/m�/s),0.7156723141670227,False
+chronos,hourly_H16_fixedphys,0,Tlog (degC),0.7113228440284729,False
+chronos,hourly_H16_fixedphys,0,OT,0.7043023705482483,False
+chronos,hourly_H16_fixedphys,1,p (mbar),0.6578729152679443,False
+chronos,hourly_H16_fixedphys,1,T (degC),0.73117995262146,False
+chronos,hourly_H16_fixedphys,1,Tpot (K),1.025500774383545,False
+chronos,hourly_H16_fixedphys,1,Tdew (degC),0.6193783283233643,False
+chronos,hourly_H16_fixedphys,1,rh (%),1.3308066129684448,False
+chronos,hourly_H16_fixedphys,1,VPmax (mbar),0.9078614711761475,False
+chronos,hourly_H16_fixedphys,1,VPact (mbar),0.564379870891571,False
+chronos,hourly_H16_fixedphys,1,VPdef (mbar),1.7990102767944336,False
+chronos,hourly_H16_fixedphys,1,sh (g/kg),0.998679518699646,False
+chronos,hourly_H16_fixedphys,1,H2OC (mmol/mol),0.650217592716217,False
+chronos,hourly_H16_fixedphys,1,rho (g/m**3),1.0524280071258545,False
+chronos,hourly_H16_fixedphys,1,wv (m/s),3.4823124408721924,False
+chronos,hourly_H16_fixedphys,1,max. wv (m/s),3.497814416885376,False
+chronos,hourly_H16_fixedphys,1,wd (deg),0.23871342837810516,False
+chronos,hourly_H16_fixedphys,1,rain (mm),0.0009819567203521729,False
+chronos,hourly_H16_fixedphys,1,raining (s),0.0004442930221557617,False
+chronos,hourly_H16_fixedphys,1,SWDR (W/m�),0.7400634288787842,False
+chronos,hourly_H16_fixedphys,1,PAR (�mol/m�/s),0.5791398882865906,False
+chronos,hourly_H16_fixedphys,1,max. PAR (�mol/m�/s),0.3400941491127014,False
+chronos,hourly_H16_fixedphys,1,Tlog (degC),1.1366443634033203,False
+chronos,hourly_H16_fixedphys,1,OT,0.5162047743797302,False
+chronos,hourly_H16_fixedphys,2,p (mbar),0.3904118239879608,False
+chronos,hourly_H16_fixedphys,2,T (degC),0.39949944615364075,False
+chronos,hourly_H16_fixedphys,2,Tpot (K),0.34322577714920044,False
+chronos,hourly_H16_fixedphys,2,Tdew (degC),0.173654243350029,False
+chronos,hourly_H16_fixedphys,2,rh (%),0.6086952686309814,False
+chronos,hourly_H16_fixedphys,2,VPmax (mbar),0.3282378315925598,False
+chronos,hourly_H16_fixedphys,2,VPact (mbar),0.25455185770988464,False
+chronos,hourly_H16_fixedphys,2,VPdef (mbar),0.24457955360412598,False
+chronos,hourly_H16_fixedphys,2,sh (g/kg),0.35010576248168945,False
+chronos,hourly_H16_fixedphys,2,H2OC (mmol/mol),0.12622345983982086,False
+chronos,hourly_H16_fixedphys,2,rho (g/m**3),0.22800388932228088,False
+chronos,hourly_H16_fixedphys,2,wv (m/s),0.8273272514343262,False
+chronos,hourly_H16_fixedphys,2,max. wv (m/s),0.5567083358764648,False
+chronos,hourly_H16_fixedphys,2,wd (deg),0.7683874368667603,False
+chronos,hourly_H16_fixedphys,2,rain (mm),0.06325740367174149,False
+chronos,hourly_H16_fixedphys,2,raining (s),0.6834138035774231,False
+chronos,hourly_H16_fixedphys,2,SWDR (W/m�),0.4000115990638733,False
+chronos,hourly_H16_fixedphys,2,PAR (�mol/m�/s),0.5791258215904236,False
+chronos,hourly_H16_fixedphys,2,max. PAR (�mol/m�/s),0.9461485147476196,False
+chronos,hourly_H16_fixedphys,2,Tlog (degC),0.3306746780872345,False
+chronos,hourly_H16_fixedphys,2,OT,0.004009753931313753,False
+chronos,hourly_H16_fixedphys,3,p (mbar),0.26983755826950073,False
+chronos,hourly_H16_fixedphys,3,T (degC),1.572896957397461,False
+chronos,hourly_H16_fixedphys,3,Tpot (K),1.3444358110427856,False
+chronos,hourly_H16_fixedphys,3,Tdew (degC),1.291853904724121,False
+chronos,hourly_H16_fixedphys,3,rh (%),0.48537230491638184,False
+chronos,hourly_H16_fixedphys,3,VPmax (mbar),1.6766293048858643,False
+chronos,hourly_H16_fixedphys,3,VPact (mbar),0.6441442370414734,False
+chronos,hourly_H16_fixedphys,3,VPdef (mbar),1.4454548358917236,False
+chronos,hourly_H16_fixedphys,3,sh (g/kg),0.6062281727790833,False
+chronos,hourly_H16_fixedphys,3,H2OC (mmol/mol),1.7097759246826172,False
+chronos,hourly_H16_fixedphys,3,rho (g/m**3),0.978359580039978,False
+chronos,hourly_H16_fixedphys,3,wv (m/s),0.3318076431751251,False
+chronos,hourly_H16_fixedphys,3,max. wv (m/s),0.3034908175468445,False
+chronos,hourly_H16_fixedphys,3,wd (deg),1.2571370601654053,False
+chronos,hourly_H16_fixedphys,3,rain (mm),0.0009272843599319458,False
+chronos,hourly_H16_fixedphys,3,raining (s),0.0017379224300384521,False
+chronos,hourly_H16_fixedphys,3,SWDR (W/m�),0.14752188324928284,False
+chronos,hourly_H16_fixedphys,3,PAR (�mol/m�/s),0.16311633586883545,False
+chronos,hourly_H16_fixedphys,3,max. PAR (�mol/m�/s),0.11651552468538284,False
+chronos,hourly_H16_fixedphys,3,Tlog (degC),1.802410364151001,False
+chronos,hourly_H16_fixedphys,3,OT,1.1894422769546509,False
+chronos,hourly_H16_fixedphys,4,p (mbar),0.2532813847064972,False
+chronos,hourly_H16_fixedphys,4,T (degC),0.6303040981292725,False
+chronos,hourly_H16_fixedphys,4,Tpot (K),0.6195579171180725,False
+chronos,hourly_H16_fixedphys,4,Tdew (degC),0.4620872437953949,False
+chronos,hourly_H16_fixedphys,4,rh (%),0.566031813621521,False
+chronos,hourly_H16_fixedphys,4,VPmax (mbar),0.8201280832290649,False
+chronos,hourly_H16_fixedphys,4,VPact (mbar),0.31315743923187256,False
+chronos,hourly_H16_fixedphys,4,VPdef (mbar),0.8460896015167236,False
+chronos,hourly_H16_fixedphys,4,sh (g/kg),0.7585655450820923,False
+chronos,hourly_H16_fixedphys,4,H2OC (mmol/mol),0.2563369572162628,False
+chronos,hourly_H16_fixedphys,4,rho (g/m**3),0.4332571029663086,False
+chronos,hourly_H16_fixedphys,4,wv (m/s),0.4445769786834717,False
+chronos,hourly_H16_fixedphys,4,max. wv (m/s),0.4295976161956787,False
+chronos,hourly_H16_fixedphys,4,wd (deg),0.7785667181015015,False
+chronos,hourly_H16_fixedphys,4,rain (mm),0.0002937391400337219,False
+chronos,hourly_H16_fixedphys,4,raining (s),0.00041621457785367966,False
+chronos,hourly_H16_fixedphys,4,SWDR (W/m�),1.060316801071167,False
+chronos,hourly_H16_fixedphys,4,PAR (�mol/m�/s),1.0325074195861816,False
+chronos,hourly_H16_fixedphys,4,max. PAR (�mol/m�/s),0.9360625147819519,False
+chronos,hourly_H16_fixedphys,4,Tlog (degC),0.7372859716415405,False
+chronos,hourly_H16_fixedphys,4,OT,0.2804015874862671,False
+chronos,hourly_H16_fixedphys,5,p (mbar),0.4111669063568115,False
+chronos,hourly_H16_fixedphys,5,T (degC),0.11313164234161377,False
+chronos,hourly_H16_fixedphys,5,Tpot (K),0.2192436307668686,False
+chronos,hourly_H16_fixedphys,5,Tdew (degC),0.7315925359725952,False
+chronos,hourly_H16_fixedphys,5,rh (%),0.22320395708084106,False
+chronos,hourly_H16_fixedphys,5,VPmax (mbar),0.21586725115776062,False
+chronos,hourly_H16_fixedphys,5,VPact (mbar),0.18428689241409302,False
+chronos,hourly_H16_fixedphys,5,VPdef (mbar),0.10275720059871674,False
+chronos,hourly_H16_fixedphys,5,sh (g/kg),0.06607651710510254,False
+chronos,hourly_H16_fixedphys,5,H2OC (mmol/mol),0.33695629239082336,False
+chronos,hourly_H16_fixedphys,5,rho (g/m**3),0.21151745319366455,False
+chronos,hourly_H16_fixedphys,5,wv (m/s),0.6939955353736877,False
+chronos,hourly_H16_fixedphys,5,max. wv (m/s),0.41787058115005493,False
+chronos,hourly_H16_fixedphys,5,wd (deg),0.13032162189483643,False
+chronos,hourly_H16_fixedphys,5,rain (mm),0.00027646124362945557,False
+chronos,hourly_H16_fixedphys,5,raining (s),0.0007189065217971802,False
+chronos,hourly_H16_fixedphys,5,SWDR (W/m�),0.05395431071519852,False
+chronos,hourly_H16_fixedphys,5,PAR (�mol/m�/s),0.10772638767957687,False
+chronos,hourly_H16_fixedphys,5,max. PAR (�mol/m�/s),0.10327224433422089,False
+chronos,hourly_H16_fixedphys,5,Tlog (degC),0.15363137423992157,False
+chronos,hourly_H16_fixedphys,5,OT,0.06983088701963425,False
+chronos,hourly_H16_fixedphys,6,p (mbar),0.2901157736778259,False
+chronos,hourly_H16_fixedphys,6,T (degC),0.4140786826610565,False
+chronos,hourly_H16_fixedphys,6,Tpot (K),0.512515664100647,False
+chronos,hourly_H16_fixedphys,6,Tdew (degC),0.6240723133087158,False
+chronos,hourly_H16_fixedphys,6,rh (%),0.7534521222114563,False
+chronos,hourly_H16_fixedphys,6,VPmax (mbar),0.4245210886001587,False
+chronos,hourly_H16_fixedphys,6,VPact (mbar),0.35672780871391296,False
+chronos,hourly_H16_fixedphys,6,VPdef (mbar),0.22698068618774414,False
+chronos,hourly_H16_fixedphys,6,sh (g/kg),0.2328161895275116,False
+chronos,hourly_H16_fixedphys,6,H2OC (mmol/mol),0.26756271719932556,False
+chronos,hourly_H16_fixedphys,6,rho (g/m**3),0.15356677770614624,False
+chronos,hourly_H16_fixedphys,6,wv (m/s),0.367891788482666,False
+chronos,hourly_H16_fixedphys,6,max. wv (m/s),0.3458690643310547,False
+chronos,hourly_H16_fixedphys,6,wd (deg),0.7133231163024902,False
+chronos,hourly_H16_fixedphys,6,rain (mm),0.0004038587212562561,False
+chronos,hourly_H16_fixedphys,6,raining (s),0.001524023711681366,False
+chronos,hourly_H16_fixedphys,6,SWDR (W/m�),0.2775791585445404,False
+chronos,hourly_H16_fixedphys,6,PAR (�mol/m�/s),0.26554277539253235,False
+chronos,hourly_H16_fixedphys,6,max. PAR (�mol/m�/s),0.1002858355641365,False
+chronos,hourly_H16_fixedphys,6,Tlog (degC),0.4831284284591675,False
+chronos,hourly_H16_fixedphys,6,OT,1.0900328159332275,False
+chronos,hourly_H16_fixedphys,7,p (mbar),0.24199678003787994,False
+chronos,hourly_H16_fixedphys,7,T (degC),0.6309674382209778,False
+chronos,hourly_H16_fixedphys,7,Tpot (K),0.7298356294631958,False
+chronos,hourly_H16_fixedphys,7,Tdew (degC),0.1461661458015442,False
+chronos,hourly_H16_fixedphys,7,rh (%),0.30576249957084656,False
+chronos,hourly_H16_fixedphys,7,VPmax (mbar),0.5602971315383911,False
+chronos,hourly_H16_fixedphys,7,VPact (mbar),0.15526866912841797,False
+chronos,hourly_H16_fixedphys,7,VPdef (mbar),0.23038482666015625,False
+chronos,hourly_H16_fixedphys,7,sh (g/kg),0.09946085512638092,False
+chronos,hourly_H16_fixedphys,7,H2OC (mmol/mol),0.12534166872501373,False
+chronos,hourly_H16_fixedphys,7,rho (g/m**3),0.5919630527496338,False
+chronos,hourly_H16_fixedphys,7,wv (m/s),0.274138867855072,False
+chronos,hourly_H16_fixedphys,7,max. wv (m/s),0.27735939621925354,False
+chronos,hourly_H16_fixedphys,7,wd (deg),0.9396196603775024,False
+chronos,hourly_H16_fixedphys,7,rain (mm),0.0007747113704681396,False
+chronos,hourly_H16_fixedphys,7,raining (s),0.000862419605255127,False
+chronos,hourly_H16_fixedphys,7,SWDR (W/m�),0.18216881155967712,False
+chronos,hourly_H16_fixedphys,7,PAR (�mol/m�/s),0.23858217895030975,False
+chronos,hourly_H16_fixedphys,7,max. PAR (�mol/m�/s),0.2950453758239746,False
+chronos,hourly_H16_fixedphys,7,Tlog (degC),0.6576614379882812,False
+chronos,hourly_H16_fixedphys,7,OT,0.4533621668815613,False
+chronos,hourly_H16_fixedphys,8,p (mbar),0.05666130781173706,False
+chronos,hourly_H16_fixedphys,8,T (degC),0.5027092099189758,False
+chronos,hourly_H16_fixedphys,8,Tpot (K),0.3200377821922302,False
+chronos,hourly_H16_fixedphys,8,Tdew (degC),1.7478244304656982,False
+chronos,hourly_H16_fixedphys,8,rh (%),1.0310481786727905,False
+chronos,hourly_H16_fixedphys,8,VPmax (mbar),0.2810474932193756,False
+chronos,hourly_H16_fixedphys,8,VPact (mbar),2.164210557937622,False
+chronos,hourly_H16_fixedphys,8,VPdef (mbar),0.8868337869644165,False
+chronos,hourly_H16_fixedphys,8,sh (g/kg),1.7421598434448242,False
+chronos,hourly_H16_fixedphys,8,H2OC (mmol/mol),1.3886185884475708,False
+chronos,hourly_H16_fixedphys,8,rho (g/m**3),0.4167866110801697,False
+chronos,hourly_H16_fixedphys,8,wv (m/s),1.1214332580566406,False
+chronos,hourly_H16_fixedphys,8,max. wv (m/s),0.955825686454773,False
+chronos,hourly_H16_fixedphys,8,wd (deg),0.8469301462173462,False
+chronos,hourly_H16_fixedphys,8,rain (mm),0.5499653816223145,False
+chronos,hourly_H16_fixedphys,8,raining (s),1.221487045288086,False
+chronos,hourly_H16_fixedphys,8,SWDR (W/m�),0.8309006094932556,False
+chronos,hourly_H16_fixedphys,8,PAR (�mol/m�/s),0.6408629417419434,False
+chronos,hourly_H16_fixedphys,8,max. PAR (�mol/m�/s),0.48819613456726074,False
+chronos,hourly_H16_fixedphys,8,Tlog (degC),0.8911633491516113,False
+chronos,hourly_H16_fixedphys,8,OT,0.7999205589294434,False
+chronos,hourly_H16_fixedphys,9,p (mbar),0.3231144845485687,False
+chronos,hourly_H16_fixedphys,9,T (degC),0.2440064251422882,False
+chronos,hourly_H16_fixedphys,9,Tpot (K),0.30309662222862244,False
+chronos,hourly_H16_fixedphys,9,Tdew (degC),0.45106056332588196,False
+chronos,hourly_H16_fixedphys,9,rh (%),0.90855872631073,False
+chronos,hourly_H16_fixedphys,9,VPmax (mbar),0.24290654063224792,False
+chronos,hourly_H16_fixedphys,9,VPact (mbar),0.2719120979309082,False
+chronos,hourly_H16_fixedphys,9,VPdef (mbar),0.2074485719203949,False
+chronos,hourly_H16_fixedphys,9,sh (g/kg),0.22519676387310028,False
+chronos,hourly_H16_fixedphys,9,H2OC (mmol/mol),0.3421045243740082,False
+chronos,hourly_H16_fixedphys,9,rho (g/m**3),0.29818254709243774,False
+chronos,hourly_H16_fixedphys,9,wv (m/s),0.30863136053085327,False
+chronos,hourly_H16_fixedphys,9,max. wv (m/s),0.4065890312194824,False
+chronos,hourly_H16_fixedphys,9,wd (deg),0.5415017008781433,False
+chronos,hourly_H16_fixedphys,9,rain (mm),0.0004837876185774803,False
+chronos,hourly_H16_fixedphys,9,raining (s),0.0016770362854003906,False
+chronos,hourly_H16_fixedphys,9,SWDR (W/m�),0.2140904664993286,False
+chronos,hourly_H16_fixedphys,9,PAR (�mol/m�/s),0.1990722119808197,False
+chronos,hourly_H16_fixedphys,9,max. PAR (�mol/m�/s),0.13450297713279724,False
+chronos,hourly_H16_fixedphys,9,Tlog (degC),0.20868271589279175,False
+chronos,hourly_H16_fixedphys,9,OT,0.27238577604293823,False
+chronos,hourly_H16_fixedphys,10,p (mbar),0.20002500712871552,False
+chronos,hourly_H16_fixedphys,10,T (degC),0.16892482340335846,False
+chronos,hourly_H16_fixedphys,10,Tpot (K),0.22006185352802277,False
+chronos,hourly_H16_fixedphys,10,Tdew (degC),0.23985770344734192,False
+chronos,hourly_H16_fixedphys,10,rh (%),0.26881104707717896,False
+chronos,hourly_H16_fixedphys,10,VPmax (mbar),0.2571723461151123,False
+chronos,hourly_H16_fixedphys,10,VPact (mbar),0.23955009877681732,False
+chronos,hourly_H16_fixedphys,10,VPdef (mbar),0.21854723989963531,False
+chronos,hourly_H16_fixedphys,10,sh (g/kg),0.2819126546382904,False
+chronos,hourly_H16_fixedphys,10,H2OC (mmol/mol),0.19724339246749878,False
+chronos,hourly_H16_fixedphys,10,rho (g/m**3),0.4106406569480896,False
+chronos,hourly_H16_fixedphys,10,wv (m/s),0.33969777822494507,False
+chronos,hourly_H16_fixedphys,10,max. wv (m/s),0.25695204734802246,False
+chronos,hourly_H16_fixedphys,10,wd (deg),2.4488933086395264,False
+chronos,hourly_H16_fixedphys,10,rain (mm),0.0003383755683898926,False
+chronos,hourly_H16_fixedphys,10,raining (s),0.0012488961219787598,False
+chronos,hourly_H16_fixedphys,10,SWDR (W/m�),0.10906048119068146,False
+chronos,hourly_H16_fixedphys,10,PAR (�mol/m�/s),0.13372181355953217,False
+chronos,hourly_H16_fixedphys,10,max. PAR (�mol/m�/s),0.07592781633138657,False
+chronos,hourly_H16_fixedphys,10,Tlog (degC),0.19020403921604156,False
+chronos,hourly_H16_fixedphys,10,OT,0.6563947200775146,False
+chronos,hourly_H16_fixedphys,11,p (mbar),0.22740410268306732,False
+chronos,hourly_H16_fixedphys,11,T (degC),0.21102160215377808,False
+chronos,hourly_H16_fixedphys,11,Tpot (K),0.4421316683292389,False
+chronos,hourly_H16_fixedphys,11,Tdew (degC),0.21029606461524963,False
+chronos,hourly_H16_fixedphys,11,rh (%),0.2240213304758072,False
+chronos,hourly_H16_fixedphys,11,VPmax (mbar),0.2057499885559082,False
+chronos,hourly_H16_fixedphys,11,VPact (mbar),0.3300171196460724,False
+chronos,hourly_H16_fixedphys,11,VPdef (mbar),0.20854322612285614,False
+chronos,hourly_H16_fixedphys,11,sh (g/kg),0.5078762769699097,False
+chronos,hourly_H16_fixedphys,11,H2OC (mmol/mol),0.41521894931793213,False
+chronos,hourly_H16_fixedphys,11,rho (g/m**3),0.856407880783081,False
+chronos,hourly_H16_fixedphys,11,wv (m/s),0.740895688533783,False
+chronos,hourly_H16_fixedphys,11,max. wv (m/s),0.41808897256851196,False
+chronos,hourly_H16_fixedphys,11,wd (deg),1.161980390548706,False
+chronos,hourly_H16_fixedphys,11,rain (mm),0.00013162195682525635,False
+chronos,hourly_H16_fixedphys,11,raining (s),0.0006973966956138611,False
+chronos,hourly_H16_fixedphys,11,SWDR (W/m�),0.0255812406539917,False
+chronos,hourly_H16_fixedphys,11,PAR (�mol/m�/s),0.031455665826797485,False
+chronos,hourly_H16_fixedphys,11,max. PAR (�mol/m�/s),0.010220476426184177,False
+chronos,hourly_H16_fixedphys,11,Tlog (degC),0.2945108711719513,False
+chronos,hourly_H16_fixedphys,11,OT,0.5019025206565857,False
+chronos,hourly_H16_fixedphys,12,p (mbar),0.7138047218322754,False
+chronos,hourly_H16_fixedphys,12,T (degC),0.6912461519241333,False
+chronos,hourly_H16_fixedphys,12,Tpot (K),0.4486936926841736,False
+chronos,hourly_H16_fixedphys,12,Tdew (degC),0.8970803618431091,False
+chronos,hourly_H16_fixedphys,12,rh (%),0.3063918352127075,False
+chronos,hourly_H16_fixedphys,12,VPmax (mbar),0.10313666611909866,False
+chronos,hourly_H16_fixedphys,12,VPact (mbar),0.7609752416610718,False
+chronos,hourly_H16_fixedphys,12,VPdef (mbar),0.1619185507297516,False
+chronos,hourly_H16_fixedphys,12,sh (g/kg),0.43160659074783325,False
+chronos,hourly_H16_fixedphys,12,H2OC (mmol/mol),0.736628532409668,False
+chronos,hourly_H16_fixedphys,12,rho (g/m**3),0.14215365052223206,False
+chronos,hourly_H16_fixedphys,12,wv (m/s),0.7011824250221252,False
+chronos,hourly_H16_fixedphys,12,max. wv (m/s),0.865719199180603,False
+chronos,hourly_H16_fixedphys,12,wd (deg),0.2963089048862457,False
+chronos,hourly_H16_fixedphys,12,rain (mm),0.009109945967793465,False
+chronos,hourly_H16_fixedphys,12,raining (s),0.002058953046798706,False
+chronos,hourly_H16_fixedphys,12,SWDR (W/m�),0.15642349421977997,False
+chronos,hourly_H16_fixedphys,12,PAR (�mol/m�/s),0.17641624808311462,False
+chronos,hourly_H16_fixedphys,12,max. PAR (�mol/m�/s),0.18532289564609528,False
+chronos,hourly_H16_fixedphys,12,Tlog (degC),0.19012941420078278,False
+chronos,hourly_H16_fixedphys,12,OT,0.014811856672167778,False
+chronos,hourly_H16_fixedphys,13,p (mbar),0.10928864777088165,False
+chronos,hourly_H16_fixedphys,13,T (degC),0.43060457706451416,False
+chronos,hourly_H16_fixedphys,13,Tpot (K),0.561765193939209,False
+chronos,hourly_H16_fixedphys,13,Tdew (degC),0.25263699889183044,False
+chronos,hourly_H16_fixedphys,13,rh (%),0.20137281715869904,False
+chronos,hourly_H16_fixedphys,13,VPmax (mbar),0.2895240783691406,False
+chronos,hourly_H16_fixedphys,13,VPact (mbar),0.5798167586326599,False
+chronos,hourly_H16_fixedphys,13,VPdef (mbar),0.3624263107776642,False
+chronos,hourly_H16_fixedphys,13,sh (g/kg),0.4920402765274048,False
+chronos,hourly_H16_fixedphys,13,H2OC (mmol/mol),0.24549612402915955,False
+chronos,hourly_H16_fixedphys,13,rho (g/m**3),0.27700215578079224,False
+chronos,hourly_H16_fixedphys,13,wv (m/s),0.263886034488678,False
+chronos,hourly_H16_fixedphys,13,max. wv (m/s),0.28526821732521057,False
+chronos,hourly_H16_fixedphys,13,wd (deg),1.451684594154358,False
+chronos,hourly_H16_fixedphys,13,rain (mm),0.001019233837723732,False
+chronos,hourly_H16_fixedphys,13,raining (s),0.0008439570665359497,False
+chronos,hourly_H16_fixedphys,13,SWDR (W/m�),0.1562040001153946,False
+chronos,hourly_H16_fixedphys,13,PAR (�mol/m�/s),0.13839644193649292,False
+chronos,hourly_H16_fixedphys,13,max. PAR (�mol/m�/s),0.06906352937221527,False
+chronos,hourly_H16_fixedphys,13,Tlog (degC),0.49248743057250977,False
+chronos,hourly_H16_fixedphys,13,OT,0.2727051377296448,False
+chronos,hourly_H16_fixedphys,14,p (mbar),0.17615844309329987,False
+chronos,hourly_H16_fixedphys,14,T (degC),0.8081587553024292,False
+chronos,hourly_H16_fixedphys,14,Tpot (K),0.22782275080680847,False
+chronos,hourly_H16_fixedphys,14,Tdew (degC),0.6442570090293884,False
+chronos,hourly_H16_fixedphys,14,rh (%),0.358656108379364,False
+chronos,hourly_H16_fixedphys,14,VPmax (mbar),0.227529376745224,False
+chronos,hourly_H16_fixedphys,14,VPact (mbar),0.43980786204338074,False
+chronos,hourly_H16_fixedphys,14,VPdef (mbar),0.5063892602920532,False
+chronos,hourly_H16_fixedphys,14,sh (g/kg),0.3313872814178467,False
+chronos,hourly_H16_fixedphys,14,H2OC (mmol/mol),0.2754833698272705,False
+chronos,hourly_H16_fixedphys,14,rho (g/m**3),0.38600656390190125,False
+chronos,hourly_H16_fixedphys,14,wv (m/s),0.3196619749069214,False
+chronos,hourly_H16_fixedphys,14,max. wv (m/s),0.3320508301258087,False
+chronos,hourly_H16_fixedphys,14,wd (deg),0.7761859893798828,False
+chronos,hourly_H16_fixedphys,14,rain (mm),0.0004006922245025635,False
+chronos,hourly_H16_fixedphys,14,raining (s),0.0008810609579086304,False
+chronos,hourly_H16_fixedphys,14,SWDR (W/m�),0.22024118900299072,False
+chronos,hourly_H16_fixedphys,14,PAR (�mol/m�/s),0.1909797340631485,False
+chronos,hourly_H16_fixedphys,14,max. PAR (�mol/m�/s),0.13395321369171143,False
+chronos,hourly_H16_fixedphys,14,Tlog (degC),0.1984652280807495,False
+chronos,hourly_H16_fixedphys,14,OT,0.20601624250411987,False
+chronos,hourly_H16_fixedphys,15,p (mbar),0.0576699823141098,False
+chronos,hourly_H16_fixedphys,15,T (degC),0.24088850617408752,False
+chronos,hourly_H16_fixedphys,15,Tpot (K),0.23157945275306702,False
+chronos,hourly_H16_fixedphys,15,Tdew (degC),0.177604079246521,False
+chronos,hourly_H16_fixedphys,15,rh (%),0.2390211522579193,False
+chronos,hourly_H16_fixedphys,15,VPmax (mbar),0.0709293931722641,False
+chronos,hourly_H16_fixedphys,15,VPact (mbar),0.4159952700138092,False
+chronos,hourly_H16_fixedphys,15,VPdef (mbar),0.06795908510684967,False
+chronos,hourly_H16_fixedphys,15,sh (g/kg),0.057141683995723724,False
+chronos,hourly_H16_fixedphys,15,H2OC (mmol/mol),0.33087921142578125,False
+chronos,hourly_H16_fixedphys,15,rho (g/m**3),0.2140655368566513,False
+chronos,hourly_H16_fixedphys,15,wv (m/s),0.18378636240959167,False
+chronos,hourly_H16_fixedphys,15,max. wv (m/s),0.2756494879722595,False
+chronos,hourly_H16_fixedphys,15,wd (deg),0.6909562349319458,False
+chronos,hourly_H16_fixedphys,15,rain (mm),0.30749574303627014,False
+chronos,hourly_H16_fixedphys,15,raining (s),0.4236706793308258,False
+chronos,hourly_H16_fixedphys,15,SWDR (W/m�),0.12738582491874695,False
+chronos,hourly_H16_fixedphys,15,PAR (�mol/m�/s),0.2214459776878357,False
+chronos,hourly_H16_fixedphys,15,max. PAR (�mol/m�/s),0.1939011514186859,False
+chronos,hourly_H16_fixedphys,15,Tlog (degC),0.6561968326568604,False
+chronos,hourly_H16_fixedphys,15,OT,0.267784059047699,False
+chronos,hourly_H16_fixedphys,16,p (mbar),0.3119719326496124,False
+chronos,hourly_H16_fixedphys,16,T (degC),0.510187029838562,False
+chronos,hourly_H16_fixedphys,16,Tpot (K),0.4004993438720703,False
+chronos,hourly_H16_fixedphys,16,Tdew (degC),0.5005487203598022,False
+chronos,hourly_H16_fixedphys,16,rh (%),0.24422559142112732,False
+chronos,hourly_H16_fixedphys,16,VPmax (mbar),0.2110196053981781,False
+chronos,hourly_H16_fixedphys,16,VPact (mbar),0.0824090912938118,False
+chronos,hourly_H16_fixedphys,16,VPdef (mbar),0.21780480444431305,False
+chronos,hourly_H16_fixedphys,16,sh (g/kg),0.09721478074789047,False
+chronos,hourly_H16_fixedphys,16,H2OC (mmol/mol),0.5412790179252625,False
+chronos,hourly_H16_fixedphys,16,rho (g/m**3),0.43042367696762085,False
+chronos,hourly_H16_fixedphys,16,wv (m/s),0.292256236076355,False
+chronos,hourly_H16_fixedphys,16,max. wv (m/s),0.48016199469566345,False
+chronos,hourly_H16_fixedphys,16,wd (deg),0.6956782341003418,False
+chronos,hourly_H16_fixedphys,16,rain (mm),0.0008120536804199219,False
+chronos,hourly_H16_fixedphys,16,raining (s),0.692582368850708,False
+chronos,hourly_H16_fixedphys,16,SWDR (W/m�),0.4498654901981354,False
+chronos,hourly_H16_fixedphys,16,PAR (�mol/m�/s),0.5289177894592285,False
+chronos,hourly_H16_fixedphys,16,max. PAR (�mol/m�/s),0.5894591808319092,False
+chronos,hourly_H16_fixedphys,16,Tlog (degC),0.5225824117660522,False
+chronos,hourly_H16_fixedphys,16,OT,0.3298484683036804,False
+chronos,hourly_H16_fixedphys,17,p (mbar),0.09055936336517334,False
+chronos,hourly_H16_fixedphys,17,T (degC),0.5734548568725586,False
+chronos,hourly_H16_fixedphys,17,Tpot (K),0.2123156636953354,False
+chronos,hourly_H16_fixedphys,17,Tdew (degC),0.5755062103271484,False
+chronos,hourly_H16_fixedphys,17,rh (%),0.18517562747001648,False
+chronos,hourly_H16_fixedphys,17,VPmax (mbar),0.49276506900787354,False
+chronos,hourly_H16_fixedphys,17,VPact (mbar),0.6170259118080139,False
+chronos,hourly_H16_fixedphys,17,VPdef (mbar),0.29635801911354065,False
+chronos,hourly_H16_fixedphys,17,sh (g/kg),0.404887318611145,False
+chronos,hourly_H16_fixedphys,17,H2OC (mmol/mol),0.9213725924491882,False
+chronos,hourly_H16_fixedphys,17,rho (g/m**3),0.267444908618927,False
+chronos,hourly_H16_fixedphys,17,wv (m/s),0.6856348514556885,False
+chronos,hourly_H16_fixedphys,17,max. wv (m/s),0.6320656538009644,False
+chronos,hourly_H16_fixedphys,17,wd (deg),0.3015000820159912,False
+chronos,hourly_H16_fixedphys,17,rain (mm),0.0005418206565082073,False
+chronos,hourly_H16_fixedphys,17,raining (s),0.00022257864475250244,False
+chronos,hourly_H16_fixedphys,17,SWDR (W/m�),0.6975606083869934,False
+chronos,hourly_H16_fixedphys,17,PAR (�mol/m�/s),0.5802814960479736,False
+chronos,hourly_H16_fixedphys,17,max. PAR (�mol/m�/s),0.5185525417327881,False
+chronos,hourly_H16_fixedphys,17,Tlog (degC),0.21764007210731506,False
+chronos,hourly_H16_fixedphys,17,OT,0.2016458958387375,False
+chronos,hourly_H16_fixedphys,18,p (mbar),0.06676313281059265,False
+chronos,hourly_H16_fixedphys,18,T (degC),0.1464153230190277,False
+chronos,hourly_H16_fixedphys,18,Tpot (K),0.20701774954795837,False
+chronos,hourly_H16_fixedphys,18,Tdew (degC),0.08800819516181946,False
+chronos,hourly_H16_fixedphys,18,rh (%),0.09704169631004333,False
+chronos,hourly_H16_fixedphys,18,VPmax (mbar),0.24012650549411774,False
+chronos,hourly_H16_fixedphys,18,VPact (mbar),0.2008005827665329,False
+chronos,hourly_H16_fixedphys,18,VPdef (mbar),0.011567380279302597,False
+chronos,hourly_H16_fixedphys,18,sh (g/kg),0.25873640179634094,False
+chronos,hourly_H16_fixedphys,18,H2OC (mmol/mol),0.1870529055595398,False
+chronos,hourly_H16_fixedphys,18,rho (g/m**3),0.26683175563812256,False
+chronos,hourly_H16_fixedphys,18,wv (m/s),0.5377568006515503,False
+chronos,hourly_H16_fixedphys,18,max. wv (m/s),0.29630112648010254,False
+chronos,hourly_H16_fixedphys,18,wd (deg),1.9510101079940796,False
+chronos,hourly_H16_fixedphys,18,rain (mm),0.00017420947551727295,False
+chronos,hourly_H16_fixedphys,18,raining (s),0.9667955040931702,False
+chronos,hourly_H16_fixedphys,18,SWDR (W/m�),0.9473151564598083,False
+chronos,hourly_H16_fixedphys,18,PAR (�mol/m�/s),0.38626599311828613,False
+chronos,hourly_H16_fixedphys,18,max. PAR (�mol/m�/s),0.8387550115585327,False
+chronos,hourly_H16_fixedphys,18,Tlog (degC),0.6923472285270691,False
+chronos,hourly_H16_fixedphys,18,OT,0.7633094787597656,False
+chronos,hourly_H16_fixedphys,19,p (mbar),0.287703275680542,False
+chronos,hourly_H16_fixedphys,19,T (degC),0.2211945801973343,False
+chronos,hourly_H16_fixedphys,19,Tpot (K),0.47757795453071594,False
+chronos,hourly_H16_fixedphys,19,Tdew (degC),0.6122605800628662,False
+chronos,hourly_H16_fixedphys,19,rh (%),1.536615252494812,False
+chronos,hourly_H16_fixedphys,19,VPmax (mbar),0.1712326556444168,False
+chronos,hourly_H16_fixedphys,19,VPact (mbar),0.6131371259689331,False
+chronos,hourly_H16_fixedphys,19,VPdef (mbar),0.3753132224082947,False
+chronos,hourly_H16_fixedphys,19,sh (g/kg),0.5986037850379944,False
+chronos,hourly_H16_fixedphys,19,H2OC (mmol/mol),0.6857799887657166,False
+chronos,hourly_H16_fixedphys,19,rho (g/m**3),0.43147218227386475,False
+chronos,hourly_H16_fixedphys,19,wv (m/s),1.3738033771514893,False
+chronos,hourly_H16_fixedphys,19,max. wv (m/s),1.085118055343628,False
+chronos,hourly_H16_fixedphys,19,wd (deg),0.2902868986129761,False
+chronos,hourly_H16_fixedphys,19,rain (mm),0.0018346905708312988,False
+chronos,hourly_H16_fixedphys,19,raining (s),0.04409094154834747,False
+chronos,hourly_H16_fixedphys,19,SWDR (W/m�),0.2648427486419678,False
+chronos,hourly_H16_fixedphys,19,PAR (�mol/m�/s),0.22137436270713806,False
+chronos,hourly_H16_fixedphys,19,max. PAR (�mol/m�/s),0.7606183886528015,False
+chronos,hourly_H16_fixedphys,19,Tlog (degC),0.5843071937561035,False
+chronos,hourly_H16_fixedphys,19,OT,0.16113494336605072,False

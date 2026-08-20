@@ -1,0 +1,2 @@
+condition,system,h,d_ground_truth,d_panda,d_chronos,err_panda,err_chronos,ratio
+3_channel_context,lorenz_rho10,336,1.934964663694503,1.8386994099029306,2.608555314953803,0.09626525379157247,0.6735906512593,6.997235500128805

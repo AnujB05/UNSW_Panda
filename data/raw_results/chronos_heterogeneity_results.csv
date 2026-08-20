@@ -1,0 +1,7 @@
+label,horizon,chronos_mae,chronos_iqr,subset,heterogeneity,difficulty
+Chronos_homo_matched_H96,96,0.7757182717323303,0.2795094698667526,homo_matched,0.0857,0.7996
+Chronos_homo_matched_H336,336,1.0771167278289795,0.5065083652734756,homo_matched,0.0857,0.7996
+Chronos_mixed_matched_H96,96,0.8167193531990051,0.3768935799598694,mixed_matched,0.6021,0.8393
+Chronos_mixed_matched_H336,336,0.8674794435501099,0.6415227204561234,mixed_matched,0.6021,0.8393
+Chronos_heterogeneous_H96,96,0.6869419515132904,0.28675377368927,heterogeneous,0.9471,0.8389
+Chronos_heterogeneous_H336,336,1.0887049734592438,0.4173879027366638,heterogeneous,0.9471,0.8389

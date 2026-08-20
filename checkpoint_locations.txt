@@ -1,0 +1,36 @@
+CHECKPOINT / LARGE-FILE LOCATIONS
+Generated 2026-08-20. These files are NOT copied into this repo (>50 MB, or model
+weights). They remain in place in C:\Users\user\Downloads. Copy only, never moved.
+
+=== MODEL WEIGHTS (.safetensors) ===
+  85,440,752  C:\Users\user\Downloads\panda-100k-baseline-checkpoint\model.safetensors
+  84,418,184  C:\Users\user\Downloads\panda-100k-ablation-checkpoint\model.safetensors
+  85,440,752  C:\Users\user\Downloads\panda-80k-baseline-checkpoint\model.safetensors
+  84,418,184  C:\Users\user\Downloads\panda-80k-ablation-checkpoint\model.safetensors
+  85,440,752  C:\Users\user\Downloads\panda-50k-checkpoints\baseline\checkpoint-final\model.safetensors
+  84,418,184  C:\Users\user\Downloads\panda-50k-checkpoints\koopman_ablation\checkpoint-final\model.safetensors
+
+  A1 / Experiment 28 + the 100k Koopman campaign reference these as
+  `baseline_100k` / `ablation_100k`. The 50k pair is Experiment 28 (preliminary).
+  No .bin files exist anywhere in Downloads.
+
+=== CHECKPOINT ARCHIVES (>50 MB, excluded) ===
+  79,363,637  C:\Users\user\Downloads\panda-100k-baseline-checkpoint.zip
+  78,405,548  C:\Users\user\Downloads\panda-100k-ablation-checkpoint.zip
+  79,363,696  C:\Users\user\Downloads\panda-80k-baseline-checkpoint.zip
+  78,401,854  C:\Users\user\Downloads\panda-80k-ablation-checkpoint.zip
+ 157,756,563  C:\Users\user\Downloads\panda-50k-checkpoints.zip
+  79,358,896  C:\Users\user\Downloads\panda-50k-checkpoints\baseline.zip
+  78,396,957  C:\Users\user\Downloads\panda-50k-checkpoints\koopman_ablation.zip
+
+=== SMALL CHECKPOINT PROVENANCE FILES (left with their weights, not copied) ===
+  Each checkpoint directory above also holds config.json, generation_config.json
+  and training_info.json (1-2 KB each). They are only meaningful next to the
+  weights they describe, so they were deliberately left in place rather than
+  copied into the repo without them.
+
+  EXCEPTION: panda-80k-baseline-checkpoint\loss_history_baseline_seg2.csv (4,776 B)
+  is a real training-loss trace and WAS copied, to data\unsorted\.
+
+=== EMPTY ===
+  C:\Users\user\Downloads\eval100k_raw_predictions\   -- directory exists, 0 files.

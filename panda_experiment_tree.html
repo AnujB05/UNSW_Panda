@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Panda vs Chronos — Full Experiment Tree</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    background: #1a1d23;
+    color: #e8e8e8;
+    overflow: hidden;
+  }
+  #header {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 10;
+    background: #22262e; border-bottom: 1px solid #333;
+    padding: 10px 20px; display: flex; align-items: center; justify-content: space-between;
+  }
+  #header h1 { font-size: 16px; margin: 0; font-weight: 600; color: #fff; }
+  #header .sub { font-size: 12px; color: #999; margin-top: 2px; }
+  #legend {
+    display: flex; gap: 14px; font-size: 11px; align-items: center; flex-wrap: wrap;
+  }
+  .legend-item { display: flex; align-items: center; gap: 5px; }
+  .legend-dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+  #controls {
+    position: fixed; top: 62px; left: 20px; z-index: 10; display: flex; gap: 8px;
+  }
+  button {
+    background: #2c313a; color: #ddd; border: 1px solid #444; border-radius: 4px;
+    padding: 6px 12px; font-size: 12px; cursor: pointer;
+  }
+  button:hover { background: #3a4049; }
+  #tree-container { width: 100vw; height: 100vh; padding-top: 100px; }
+  svg { width: 100%; height: 100%; cursor: grab; }
+  svg:active { cursor: grabbing; }
+  .link {
+    fill: none; stroke: #4a4f58; stroke-width: 1.6px;
+  }
+  .node circle {
+    stroke-width: 2px; cursor: pointer;
+  }
+  .node text {
+    font-size: 12px; fill: #e8e8e8; cursor: pointer;
+    paint-order: stroke;
+    stroke: #1a1d23; stroke-width: 3px;
+  }
+  .node--internal circle { stroke: #888; }
+  #tooltip {
+    position: fixed; display: none; max-width: 340px;
+    background: #2c313a; border: 1px solid #555; border-radius: 6px;
+    padding: 10px 12px; font-size: 12.5px; line-height: 1.45; color: #ddd;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.5); z-index: 20; pointer-events: none;
+  }
+  #tooltip .tt-name { font-weight: 700; color: #fff; margin-bottom: 4px; font-size: 13px; }
+  #tooltip .tt-status { display: inline-block; font-size: 10px; padding: 1px 6px; border-radius: 10px; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.03em; }
+</style>
+</head>
+<body>
+
+<div id="header">
+  <div>
+    <h1>Panda vs Chronos — Full Investigation Tree</h1>
+    <div class="sub">Click a node to expand/collapse · scroll to zoom · drag to pan · hover for detail</div>
+  </div>
+  <div id="legend"></div>
+</div>
+<div id="controls">
+  <button id="expand-all">Expand All</button>
+  <button id="collapse-all">Collapse to Branches</button>
+  <button id="reset-view">Reset View</button>
+</div>
+<div id="tree-container"><svg id="tree-svg"></svg></div>
+<div id="tooltip"></div>
+
+<script>
+const statusColor = {
+  root:       "#666666",
+  established:"#3ec46d",
+  active:     "#4a90d9",
+  mixed:      "#e6a23c",
+  null:       "#9a9fae",
+  retired:    "#7a7f8c",
+  retracted:  "#e84040"
+};
+const statusLabel = {
+  root: "root", established: "established / high confidence", active: "active lead",
+  mixed: "mixed / medium confidence", null: "null result", retired: "retired",
+  retracted: "retracted"
+};
+
+// Build legend
+const legendEl = document.getElementById("legend");
+Object.keys(statusColor).filter(k => k !== "root").forEach(key => {
+  const item = document.createElement("div");
+  item.className = "legend-item";
+  item.innerHTML = `<span class="legend-dot" style="background:${statusColor[key]}"></span>${statusLabel[key]}`;
+  legendEl.appendChild(item);
+});
+
+const treeData = {
+  "name": "Panda vs Chronos Investigation",
+  "status": "root",
+  "children": [
+    {
+      "name": "Pre-Presentation & Fixed Benchmarks",
+      "status": "established",
+      "desc": "Exp 1–18. Foundational benchmark layer; established the core empirical picture before mechanism-hunting began.",
+      "children": [
+        {
+          "name": "Exp 1/8: Standard TS Benchmarks",
+          "status": "established",
+          "desc": "ETTh1/ETTh2/Weather. Weather: significant Panda advantage at all horizons (n=20, p≤0.001). ETTh1/2: inconsistent, mostly not significant.",
+          "children": [
+            {
+              "name": "Original Exp 1 (superseded)",
+              "status": "retired",
+              "desc": "Global normalisation (leaks future info), sMAPE as primary metric (unreliable near zero), n=10, single horizon H=128, no significance tests. Fully superseded by Exp 8."
+            },
+            {
+              "name": "Week 1 / Exp 7 (invalid)",
+              "status": "retired",
+              "desc": "Retained global normalisation leakage, n=6, sMAPE primary. Not reported; superseded by Exp 8."
+            },
+            {
+              "name": "ETTh2 H=336: Non-Replication",
+              "status": "retired",
+              "desc": "Original Exp 8: advantage +0.185, p=0.013 — flagged exploratory at the time (1 of 8 uncorrected ETT tests). Independent rerun (overnight batch, n=20): advantage +0.061, p=0.088. Does NOT replicate — closes the item, vindicates the log's own exploratory-flagging policy; not a retraction of an established claim."
+            }
+          ]
+        },
+        {
+          "name": "Exp 2: Double Pendulum Noise",
+          "status": "mixed",
+          "desc": "Panda MAE flat across noise levels 0–0.50σ; Chronos degrades more. n=8, single trajectory."
+        },
+        {
+          "name": "Exp 3/4: Lorenz ρ Sweep & dysts Survey",
+          "status": "mixed",
+          "desc": "Advantage tracks chaos onset in raw form; later shown confounded by signal statistics (Exp 4 p-hacked)."
+        },
+        {
+          "name": "Exp 10/28: Burgers Viscosity Sweep",
+          "status": "established",
+          "desc": "Panda wins even at ν=1.0/2.0 (non-chaotic, diffusion-dominated). Directly contradicts chaos-necessity.",
+          "children": [
+            {
+              "name": "Original Exp 5 (superseded)",
+              "status": "retired",
+              "desc": "No non-chaotic baseline (ν≥0.5 untested), solver diverged at ν=1.0, Lyapunov estimation returned ~zero everywhere. Superseded by the fixed sweep with a stable adaptive solver."
+            },
+            {
+              "name": "Exp 15: Burgers λ₁ via Rosenstein (failed)",
+              "status": "retired",
+              "desc": "Estimator invalid for high-dimensional PDE observables: insufficient embedding dimension (m=3 vs attractor dim potentially O(100)) and PCA modes are non-generic Takens observables. All λ₁ values from this attempt unreliable; physical regime labels used as chaos proxy instead."
+            }
+          ]
+        },
+        {
+          "name": "Exp 11/17/18: Decomposition Story",
+          "status": "mixed",
+          "desc": "Removing periodic component collapses/reverses advantage. Revised: shared projection-error component + smaller Panda-specific residual dependence.",
+          "children": [
+            {
+              "name": "Week 1 Decomposition (oracle leakage, invalid)",
+              "status": "retired",
+              "desc": "Future trend/seasonal components extracted from the FULL series and given directly to both models. Reported 65% MAE reduction — entirely an artifact. Corrected version (Exp 11) showed a 25% INCREASE instead, opposite direction."
+            },
+            {
+              "name": "Exp 13 (constructed-target, superseded)",
+              "status": "retired",
+              "desc": "Periodic-only context evaluated against an FFT-constructed target, not real future values. Confounds 'reproduces FFT projection' with 'forecasts real periodic component'. Superseded by Exp 18 (real targets)."
+            },
+            {
+              "name": "Exp 20: Chronos Residual Ablation",
+              "status": "mixed",
+              "desc": "Tests whether Chronos ALSO degrades without the periodic component (it does, +0.277 MAE, p=0.016). Initial reading: 'both models degrade equally, decomposition not diagnostic.' July 2026 revision: overcorrected — a large SHARED projection-error component coexists with a smaller genuine Panda-specific full-signal-dependence component, strongest at short horizon."
+            }
+          ]
+        },
+        {
+          "name": "Exp 12/16: Subsampling Methods",
+          "status": "null",
+          "desc": "Panda absolute MAE invariant to spatial encoding method; Chronos drives observed differences. Not seed-stable.",
+          "children": [
+            {
+              "name": "Original Exp 6 (degenerate, superseded)",
+              "status": "retired",
+              "desc": "Spatial location x=0 was a near-nodal point — near-constant field, trivially predictable by both models. n=6, single location. Fully superseded by Exp 12's 4-method comparison."
+            }
+          ]
+        },
+        {
+          "name": "Exp 19: Complexity Continuum",
+          "status": "mixed",
+          "desc": "5 systems, periodic→chaotic. Non-monotone under absolute advantage; largely floor-effect under relative skill (Duffing confirmed n=20, Van der Pol partially downgraded)."
+        },
+        {
+          "name": "Exp 21: Permutation Entropy",
+          "status": "retired",
+          "desc": "PE at order 3 fails as complexity discriminator on 3 independent grounds. Retired."
+        }
+      ]
+    },
+    {
+      "name": "Layer 0: Validity Gates",
+      "status": "established",
+      "children": [
+        {
+          "name": "G1: Correlation-Dimension Revalidation",
+          "status": "established",
+          "desc": "First successful gating of a corr-dim estimator in project history. See G1 Rollout Structure below for the positive result."
+        },
+        {
+          "name": "G2: Confirmatory n=20 Reruns",
+          "status": "established",
+          "desc": "Partially complete via Exp 33; materially important negative outcome (heterogeneity collapse)."
+        },
+        {
+          "name": "G3: Chronos Contamination Check",
+          "status": "established",
+          "desc": "ETT and Jena-Weather confirmed absent from Chronos training corpus. Both models genuinely zero-shot."
+        },
+        {
+          "name": "G4: Classical Baseline Column",
+          "status": "established",
+          "desc": "Seasonal-naive beats BOTH Panda and Chronos on ETTh2 H=96. Reframes “Panda fails ETTh” as “ETTh favors simple models.”"
+        },
+        {
+          "name": "G5: Chronos Horizon-Mismatch Check",
+          "status": "null",
+          "desc": "Chronos's ≤64-step spec does not explain Weather advantage. Relative skill flat/inverse across H=32/64/96."
+        }
+      ]
+    },
+    {
+      "name": "Branch A: Positive Mechanism (self-referential)",
+      "status": "null",
+      "desc": "Tests candidate architectural components against Panda's OWN baseline/ablation checkpoints, not Chronos.",
+      "children": [
+        {
+          "name": "A1: Koopman Lifting Ablation (100k campaign)",
+          "status": "mixed",
+          "desc": "Established behavioral pattern: ablation beats baseline on chaotic ODEs/Harmonic; baseline beats ablation on Burgers ν=1.0. Mechanism unexplained. Bonferroni-robust at 5/6.",
+          "children": [
+            {
+              "name": "Gate FAIL & 3-Protocol Diagnostic",
+              "status": "mixed",
+              "desc": "Pre-registered in-distribution gate FAILED for both conditions on Lorenz. Three protocols tested (gate_3ch, gate_1ch, alt_1ch) to isolate channel-count vs IC/integrator as the cause — all 3 failed, ruling out a fragile single-protocol artifact."
+            },
+            {
+              "name": "Held-Out Systems: Rossler & SprottB",
+              "status": "established",
+              "desc": "Confirmed absent from the loaded skew40 corpus (genuine held-out test). Ablation beat baseline in 6/6 system/horizon combinations; Rossler shows the largest, most significant gaps at both horizons."
+            },
+            {
+              "name": "Significance Testing (Bonferroni)",
+              "status": "established",
+              "desc": "6/10 nominally significant tests favor ablation across 5 systems × 2 horizons; 5/6 survive strict Bonferroni correction (α=0.005). Only alt_1ch H=336 does not survive."
+            },
+            {
+              "name": "50k→100k Trend Check",
+              "status": "mixed",
+              "desc": "Gap (baseline−ablation) grew in 5/8 combinations, shrank in 2/8, flipped sign in 1/8. Argues against 'baseline just needs more steps to catch up' within the observed window."
+            },
+            {
+              "name": "OOD Evaluation: Two Separate Claims",
+              "status": "mixed",
+              "desc": "Separates Claim 1 (overall magnitude likely inflated by the 4× smaller training batch vs published) from Claim 2 (the direction/dataset-dependence pattern itself — not explained by the compute gap alone, since the gap grew not shrank)."
+            }
+          ]
+        },
+        {
+          "name": "A3: Koopman Feature-Space Geometry",
+          "status": "null",
+          "desc": "Neither eDMD linear-fittability nor Jacobian sensitivity supports the linearization theory behind A1's pattern. Burgers is the WORST-fit class, not the best."
+        },
+        {
+          "name": "A2a: Temporal Attention Probes",
+          "status": "null",
+          "desc": "3 cheap probes (shuffle, truncate, attention maps). Probe 1's gate not robust to scaling; Probe 2's asymmetry reproduced by non-learned linear baselines. Weak, self-undermining.",
+          "children": [
+            {
+              "name": "Probe 1: Patch-Order Shuffling",
+              "status": "mixed",
+              "desc": "The pre-registered escalation gate. Literal absolute-MAE reading says ESCALATE to A2b; scale-corrected relative-degradation reanalysis says DO NOT ESCALATE. Verdict is not robust to this choice — recorded as genuine ambiguity, not resolved by fiat."
+            },
+            {
+              "name": "Probe 2: Context-Length Truncation",
+              "status": "null",
+              "desc": "Burgers uniquely IMPROVES as context shrinks (512→32); every other class worsens. The one scale-free signal in the probe set — but see the addendum below."
+            },
+            {
+              "name": "Probe 3: Attention-Map Inspection",
+              "status": "mixed",
+              "desc": "Qualitative attention-map comparison, single trajectory per class, no statistical test. Descriptive only; cannot bear independent evidentiary weight."
+            },
+            {
+              "name": "Addendum: Trivial-Baseline Control (H1 vs H3)",
+              "status": "null",
+              "desc": "Non-learned linear-fit and running-mean baselines reproduce Probe 2's Burgers/Lorenz asymmetry almost exactly (near-perfect Spearman correlation) — substantially favors H3 (intrinsic data property) over H1 (attention-specific mechanism)."
+            }
+          ]
+        },
+        {
+          "name": "A2b: Temporal Attention Ablation (retrain)",
+          "status": "active",
+          "desc": "NOT pursued — deprioritized given A2a's weak evidence base, not formally rejected. Could still be run."
+        },
+        {
+          "name": "Channel Attention (4 nulls: Exp 9/22/27/33)",
+          "status": "null",
+          "desc": "Univariate vs multivariate Panda, tested 4 times across Weather/Burgers/heterogeneity subsets. Never a significant effect."
+        },
+        {
+          "name": "Prediction Head Fine-Tuning (Exp 23)",
+          "status": "null",
+          "desc": "50-step head-only fine-tune WORSENS Panda MAE at H=96. Not a lightweight recoverable bottleneck."
+        }
+      ]
+    },
+    {
+      "name": "Branch B: Generalisation Boundary (real Panda-vs-Chronos)",
+      "status": "mixed",
+      "children": [
+        {
+          "name": "Sensor Heterogeneity (built up → collapsed)",
+          "status": "retired",
+          "desc": "Previously called the strongest convergent finding of the investigation. Fully retired.",
+          "children": [
+            {
+              "name": "Exp 24: Stratification",
+              "status": "retired",
+              "desc": "Advantage drops ~5× from homogeneous to heterogeneous subsets. n=8."
+            },
+            {
+              "name": "Exp 25: Difficulty-Matched Control",
+              "status": "retired",
+              "desc": "Effect persists after matching per-channel difficulty. n=8."
+            },
+            {
+              "name": "Exp 26: Variance-CV Control",
+              "status": "retired",
+              "desc": "Effect persists after 2nd-order difficulty control. Called ‘most controlled finding’ at the time."
+            },
+            {
+              "name": "Exp 32: Structure-Heterogeneity Entanglement",
+              "status": "retired",
+              "desc": "Found homo/hetero subsets confound with the (separate) structure statistic — can't cleanly attribute either."
+            },
+            {
+              "name": "Exp 33 (B2a): n=20 Discriminator",
+              "status": "retired",
+              "desc": "Effect COLLAPSES: 83% → 4% at proper sample size. Ordering partially inverts."
+            },
+            {
+              "name": "Exp 34 (R1+R2): Independent Replication",
+              "status": "retired",
+              "desc": "Confirmed via separate code path. H=336 sign REVERSES. Determinism/seasonal-clustering/index-mismatch all ruled out. High-confidence retirement."
+            },
+            {
+              "name": "B2b/B2c: Node Embeddings / XXLTraffic",
+              "status": "retired",
+              "desc": "Entire motivation removed by Exp 34. Retired in full, not merely unblocked-and-waiting."
+            }
+          ]
+        },
+        {
+          "name": "Structure Statistic / TDA Investigation",
+          "status": "retired",
+          "desc": "Exp 29–31. Direct execution of the old deck's 'Proposed Direction 3' (persistent homology).",
+          "children": [
+            {
+              "name": "Exp 29: Gate Validation (v1–v3)",
+              "status": "established",
+              "desc": "3 iterations to find a validated H1-persistence instrument. Scope: detects smooth rotational structure, NOT general attractor geometry."
+            },
+            {
+              "name": "Exp 30: Real-Data Structure Statistic",
+              "status": "mixed",
+              "desc": "Weather splits cleanly: thermo/humidity channels high-structure, wind/radiation low. Real within-dataset finding."
+            },
+            {
+              "name": "Exp 31: Downsampling Control",
+              "status": "retired",
+              "desc": "ARTIFACT verdict — the Weather-vs-ETTh separation does not survive matching sampling rate/span. Branch B1 (intrinsic geometry) retired, merged into B3."
+            }
+          ]
+        },
+        {
+          "name": "B3: Signal Family / Structure-as-Sampled",
+          "status": "mixed",
+          "children": [
+            {
+              "name": "B3a: Chronos Attribution / Periods-in-Window",
+              "status": "active",
+              "desc": "Redirected after motivating result (Harmonic) retracted. Surfaced a REPLICATED non-monotonic pattern (2 seeds) — candidate patch-size-alignment mechanism at piw=32. Active lead."
+            },
+            {
+              "name": "B3b: Burgers Representation Test",
+              "status": "established",
+              "desc": "Advantage representation-robust at ν=0.05 (3 encodings). MIXED at ν=1.0 but direction-consistent at n=20."
+            },
+            {
+              "name": "B3c: Downsampled Weather Intervention",
+              "status": "null",
+              "desc": "Real advantage metric, not self-referential. Neither model's MAE changes significantly at hourly resolution. No support for resolution-dependency."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Standalone Flagship Findings",
+      "status": "established",
+      "children": [
+        {
+          "name": "Lorenz Phase-Surrogate (Exp 14)",
+          "status": "established",
+          "desc": "FLAGSHIP RESULT. Destroy determinism, preserve spectrum exactly → Panda degrades ~15–16× vs Chronos's ~2×. Confirmed significant at n=20 (corrected from original 'collapse' framing)."
+        },
+        {
+          "name": "Harmonic Oscillator Saga",
+          "status": "retracted",
+          "desc": "Was cited as key evidence AGAINST chaos-necessity. Now retracted.",
+          "children": [
+            {
+              "name": "Exp 19: Original Finding",
+              "status": "retracted",
+              "desc": "+0.370 advantage on a pure sinusoid, n=8. Contradicted chaos-necessity."
+            },
+            {
+              "name": "Confirmed at n=20 (pre-correction)",
+              "status": "retracted",
+              "desc": "+0.322, p<0.0001. Looked solid."
+            },
+            {
+              "name": "RETRACTION: Amplitude-Growth Artifact",
+              "status": "retracted",
+              "desc": "Explicit-Euler generator has eigenvalue magnitude >1 — provably unstable. Under stable generator: advantage collapses 98.8%, reverses sign at H=192."
+            }
+          ]
+        },
+        {
+          "name": "G1: Rollout-Structure Preservation",
+          "status": "active",
+          "desc": "Panda's autoregressive rollouts preserve attractor dimension 2.2–8.5× better than Chronos's. Thin evidentiary base (2 systems) — promising, not yet Tier 1.",
+          "children": [
+            {
+              "name": "Double Pendulum Physics Bug",
+              "status": "established",
+              "desc": "The original acceleration formulas were simply WRONG (not an integrator-choice issue) — caught when a symplectic implicit-midpoint integrator showed WORSE energy drift than plain RK45, ruling out integrator choice as the cause. Same 'verify equations against source, don't reconstruct from memory' lesson this log has caught repeatedly in code."
+            },
+            {
+              "name": "Session-Level Non-Determinism (baseline_100k)",
+              "status": "established",
+              "desc": "baseline_100k is deterministic within a session but varies up to 88.5% across independent sessions; ablation_100k is bit-stable throughout. Consistent with GPU library algorithm auto-selection specific to the dynamics-embedding compute path baseline has and ablation lacks."
+            },
+            {
+              "name": "Part 2a: Published Checkpoints Result",
+              "status": "established",
+              "desc": "Panda's rollout preserves attractor dimension 2.2– 8.5× better than Chronos's, on Double Pendulum and Lorenz ρ=10. High confidence for these two systems; single trajectory each."
+            },
+            {
+              "name": "Part 2b: Retrained Checkpoints (per-system reliability)",
+              "status": "mixed",
+              "desc": "Harmonic: robust, 3/3 independent sessions agree (5.7% spread). Rossler: genuinely ambiguous, straddles ablation's value from both sides. Burgers: not currently measurable (88.5% session-to-session range)."
+            }
+          ]
+        },
+        {
+          "name": "Exp 45: Full-Scale Univariate Confirmation",
+          "status": "established",
+          "desc": "Univariate Panda vs Chronos, all 21 Weather channels. p<0.001 at every horizon — cleanest significance in the whole log. 5th channel-attention null."
+        },
+        {
+          "name": "Skew40 Distributional-Similarity Test",
+          "status": "retired",
+          "desc": "Weak, direction-consistent correlation never reaches significance at honest effective n. Closed; no follow-up queued."
+        },
+        {
+          "name": "Duffing Integrator Audit",
+          "status": "established",
+          "desc": "Checked whether Harmonic's bug recurs. Both pre-registered checks pass cleanly (1.05× vs 1.3× threshold). Duffing's result stands, no caveat."
+        }
+      ]
+    },
+    {
+      "name": "Branch B4: Interventions (forward-looking)",
+      "status": "active",
+      "children": [
+        {
+          "name": "Trainable Koopman Lift",
+          "status": "active",
+          "desc": "Motivated by A1+A3 jointly. Pre-registration designed: unfreeze RFF only, 3-arm comparison, in-dist gate first."
+        },
+        {
+          "name": "Gating Hybrid (Panda/Chronos router)",
+          "status": "active",
+          "desc": "Ungated, runnable anytime. Cheapest B4 item, practical improvement."
+        },
+        {
+          "name": "LoRA / Fine-tune on ETTh",
+          "status": "active",
+          "desc": "Waiting on Flora's group compute access."
+        },
+        {
+          "name": "ERA5 / BARRA-R (Flora's suggestion)",
+          "status": "active",
+          "desc": "Fills the real-world-chaotic gap: every real dataset tested so far is non-chaotic; every chaotic system tested is synthetic."
+        }
+      ]
+    }
+  ]
+};
+
+const width = window.innerWidth;
+const height = window.innerHeight - 100;
+const dx = 26;
+const dy = width / 7;
+
+const tree = d3.tree().nodeSize([dx, dy]);
+const diagonal = d3.linkHorizontal().x(d => d.y).y(d => d.x);
+
+const svg = d3.select("#tree-svg")
+  .attr("viewBox", [-100, -height/2, width, height]);
+
+const gZoom = svg.append("g");
+const gLink = gZoom.append("g")
+    .attr("fill", "none")
+    .attr("stroke", "#4a4f58")
+    .attr("stroke-opacity", 0.7)
+    .attr("stroke-width", 1.6);
+const gNode = gZoom.append("g")
+    .attr("cursor", "pointer")
+    .attr("pointer-events", "all");
+
+const zoomBehavior = d3.zoom()
+  .scaleExtent([0.25, 2.5])
+  .on("zoom", (event) => gZoom.attr("transform", event.transform));
+svg.call(zoomBehavior);
+
+const root = d3.hierarchy(treeData);
+root.x0 = 0;
+root.y0 = 0;
+
+// Start with depth <=1 expanded, everything below collapsed
+root.descendants().forEach((d, i) => {
+  d.id = i;
+  d._children = d.children;
+  if (d.depth >= 2) {
+    d.children = null;
+  }
+});
+
+const tooltip = document.getElementById("tooltip");
+
+function showTooltip(event, d) {
+  if (!d.data.desc) { tooltip.style.display = "none"; return; }
+  const c = statusColor[d.data.status] || "#888";
+  tooltip.innerHTML = `
+    <div class="tt-name">${d.data.name}</div>
+    <div class="tt-status" style="background:${c}22;color:${c};border:1px solid ${c}">${statusLabel[d.data.status] || d.data.status}</div>
+    <div>${d.data.desc}</div>
+  `;
+  tooltip.style.display = "block";
+  tooltip.style.left = (event.clientX + 16) + "px";
+  tooltip.style.top = (event.clientY + 8) + "px";
+}
+function hideTooltip() { tooltip.style.display = "none"; }
+
+function update(source) {
+  const duration = 300;
+  const nodes = root.descendants().reverse();
+  const links = root.links();
+
+  tree(root);
+
+  let left = root, right = root;
+  root.eachBefore(node => {
+    if (node.x < left.x) left = node;
+    if (node.x > right.x) right = node;
+  });
+  const heightNeeded = right.x - left.x + 80;
+
+  svg.transition().duration(duration)
+     .attr("viewBox", [-100, left.x - 40, width, Math.max(heightNeeded, height)]);
+
+  const node = gNode.selectAll("g.node")
+    .data(nodes, d => d.id);
+
+  const nodeEnter = node.enter().append("g")
+      .attr("class", "node")
+      .attr("transform", d => `translate(${source.y0},${source.x0})`)
+      .attr("fill-opacity", 0)
+      .attr("stroke-opacity", 0)
+      .on("click", (event, d) => {
+        d.children = d.children ? null : d._children;
+        update(d);
+      })
+      .on("mouseover", showTooltip)
+      .on("mousemove", showTooltip)
+      .on("mouseout", hideTooltip);
+
+  nodeEnter.append("circle")
+      .attr("r", d => d.depth === 0 ? 8 : (d._children ? 6.5 : 4.5))
+      .attr("fill", d => statusColor[d.data.status] || "#888")
+      .attr("stroke", d => d._children ? "#fff" : "none")
+      .attr("stroke-opacity", d => d._children ? 0.5 : 0);
+
+  nodeEnter.append("text")
+      .attr("dy", "0.31em")
+      .attr("x", d => d._children ? -10 : 10)
+      .attr("text-anchor", d => d._children ? "end" : "start")
+      .text(d => d.data.name)
+      .attr("font-weight", d => d.depth <= 1 ? 700 : 400);
+
+  const nodeUpdate = node.merge(nodeEnter).transition().duration(duration)
+      .attr("transform", d => `translate(${d.y},${d.x})`)
+      .attr("fill-opacity", 1)
+      .attr("stroke-opacity", 1);
+
+  nodeUpdate.select("circle")
+      .attr("r", d => d.depth === 0 ? 8 : (d._children ? 6.5 : 4.5))
+      .attr("stroke", d => d._children ? "#fff" : "none")
+      .attr("stroke-opacity", d => d._children ? 0.5 : 0);
+
+  const nodeExit = node.exit().transition().duration(duration).remove()
+      .attr("transform", d => `translate(${source.y},${source.x})`)
+      .attr("fill-opacity", 0)
+      .attr("stroke-opacity", 0);
+
+  const link = gLink.selectAll("path.link")
+    .data(links, d => d.target.id);
+
+  const linkEnter = link.enter().append("path")
+      .attr("class", "link")
+      .attr("d", d => {
+        const o = {x: source.x0, y: source.y0};
+        return diagonal({source: o, target: o});
+      });
+
+  link.merge(linkEnter).transition().duration(duration)
+      .attr("d", diagonal);
+
+  link.exit().transition().duration(duration).remove()
+      .attr("d", d => {
+        const o = {x: source.x, y: source.y};
+        return diagonal({source: o, target: o});
+      });
+
+  root.eachBefore(d => { d.x0 = d.x; d.y0 = d.y; });
+}
+
+update(root);
+
+document.getElementById("expand-all").addEventListener("click", () => {
+  root.eachBefore(d => { if (d._children) d.children = d._children; });
+  update(root);
+});
+document.getElementById("collapse-all").addEventListener("click", () => {
+  root.eachBefore(d => { if (d.depth >= 1 && d._children) d.children = null; });
+  update(root);
+});
+document.getElementById("reset-view").addEventListener("click", () => {
+  svg.transition().duration(400).call(zoomBehavior.transform, d3.zoomIdentity);
+  update(root);
+});
+</script>
+</body>
+</html>
